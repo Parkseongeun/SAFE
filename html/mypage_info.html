@@ -1,0 +1,225 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>SAFE Forum 2021</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="style/css/swiper.min.css">
+  <link rel="stylesheet" href="style/css/common.css">
+</head>
+<body>
+
+<header class="header">
+	<div class="wraparea">
+		<h1 class="logo"><a href="main.html"><strong>SAFE Forum</strong> 2021</a></h1>
+		<nav class="box__nav--header">
+			<div class="box__inner">
+				<ul>
+					<li><a href="keynote.html">Keynote</a></li>
+					<li><a href="sessions.html">Partner Session</a></li>
+					<li><a href="pavilion.html">Partner Pavilion</a></li>
+					<li><a href="networking.html">Networking</a></li>
+					<li><a href="registration.html">Registration</a></li>
+				</ul>
+				<button type="button" class="button__close"><span class="for-a11y">Close</span></button>
+			</div>
+		</nav>
+		<div class="box__link">
+			<a href="mypage.html" class="link__my"><span class="for-a11y">Mypage</span></a>
+			<button type="button" class="button__gnb"><span class="for-a11y">Gnb open</span></button>
+		</div>
+	</div>
+</header>
+
+<div class="container mypage"><!-- to.Dev : 마이페이지 mypage class 추가 -->
+	<div class="wraparea">
+		<article class="box__article">
+			<h2 class="text-center">My page</h2>
+		</article>
+		<article class="box__article box__article--myinfo">
+			<a href="#" class="link__logout">Log out</a>
+			<div class="box__inner">
+				<form action="" class="form__regist">
+					<div class="form-control js-active">
+						<label for="iptID"><span class="text--required">*</span> Email Address (ID)</label>
+						<input type="email" id="iptID" value="jun0326@naver.com" aria-required="true">
+					</div>
+					<div class="form-control">
+						<label for="iptPW"><span class="text--required">*</span> Password</label>
+						<input type="password" id="iptPW" value="" aria-required="true">
+					</div>
+					<div class="form-control">
+						<label for="iptPWC"><span class="text--required">*</span> Confirm Password</label>
+						<input type="password" id="iptPWC" value="" aria-required="true">
+					</div>
+					<br><br><br>
+					<div class="form-control js-active">
+						<label for="iptFName"><span class="text--required">*</span> First Name</label>
+						<input type="text" id="iptFName" value="Jun" aria-required="true">
+					</div>
+					<div class="form-control js-active">
+						<label for="iptLName"><span class="text--required">*</span> Last Name</label>
+						<input type="text" id="iptLName" value="SEOMOON" aria-required="true">
+					</div>
+					<div class="form-control form-group-select js-active">
+						<label for="sltCountry"><span class="text--required">*</span> Country</label>
+						<select id="sltCountry" name="sltCountry">
+							<option value="" disabled="disabled">Country</option>
+							<option value="">Republic of Korea</option>
+							<option value="">United States</option>
+						</select>
+					</div>
+					<div class="form-control">
+						<label for="iptCName"><span class="text--required">*</span> Company Name</label>
+						<input type="text" id="iptCName" value="Westgate" aria-required="true">
+					</div>
+					<div class="form-control form-group-select js-active">
+						<label for="sltCompany"><span class="text--required">*</span> Company Type</label>
+						<select id="sltCompany" name="sltCompany">
+							<option value="" disabled="disabled">Country Type</option>
+							<option value="" >Equipment/Materials</option>
+							<option value="" ></option>
+							<option value="" ></option>
+						</select>
+					</div>
+					<div class="form-control form-group-select js-active">
+						<label for="sltJob"><span class="text--required">*</span>Job Function</label>
+						<select id="sltJob" name="sltJob">
+							<option value="" disabled="disabled">Job Function</option>
+							<option value="" >Director</option>
+							<option value="" ></option>
+							<option value="" ></option>
+						</select>
+					</div>
+					<div class="form-control">
+						<label for="iptJob"><span class="text--required">*</span> Job Title</label>
+						<input type="text" id="iptJob" value="Director" aria-required="true">
+					</div>
+					<div class="form-group form-group-file">
+						<label for="iptPhoto">Photo ID (Optional)</label>
+                        <div class="box__files-image">
+                            <img src="images/speakers/01.jpg" alt="">
+                        </div>
+						<div class="box__files">
+							<input class="upload-name" disabled="disabled" aria-required="false">
+							<label for="iptPhoto" class="button">File Search</label>
+							<input type="file" id="iptPhoto" class="upload-hidden">
+							<button type="button" class="button__delete"><span class="for-a11y">Delete</span></button><!-- to.Dev : 이미지 업로드 후 버튼 노출 -->
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="chkAvatar">Avatar Select</label>
+						<div class="inline-form-group">
+							<div class="form-radio form-radio--avatar">
+								<input id="chkAvatar1" type="radio" name="chkAvatar" checked>
+								<label for="chkAvatar1"><span></span><img src="images/avatar_1.png" alt=""></label>
+							</div>
+							<div class="form-radio form-radio--avatar">
+								<input id="chkAvatar2" type="radio" name="chkAvatar">
+								<label for="chkAvatar2"><span></span><img src="images/avatar_2.png" alt=""></label>
+							</div>
+							<div class="form-radio form-radio--avatar">
+								<input id="chkAvatar3" type="radio" name="chkAvatar">
+								<label for="chkAvatar3"><span></span><img src="images/avatar_3.png" alt=""></label>
+							</div>
+							<div class="form-radio form-radio--avatar">
+								<input id="chkAvatar4" type="radio" name="chkAvatar">
+								<label for="chkAvatar4"><span></span><img src="images/avatar_4.png" alt=""></label>
+							</div>
+							<div class="form-radio form-radio--avatar">
+								<input id="chkAvatar5" type="radio" name="chkAvatar">
+								<label for="chkAvatar5"><span></span><img src="images/avatar_5.png" alt=""></label>
+							</div>
+							<div class="form-radio form-radio--avatar">
+								<input id="chkAvatar6" type="radio" name="chkAvatar">
+								<label for="chkAvatar6"><span></span><img src="images/avatar_default.png" alt=""></label>
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="chkIterest">Interested field : Please Select all you interested</label>
+						<div class="inline-form-group">
+							<div class="form-checkbox">
+								<input id="chkIterest1" type="checkbox" name="chkIterest" checked>
+								<label for="chkIterest1"><span></span>EDA</label>
+							</div>
+							<div class="form-checkbox">
+								<input id="chkIterest2" type="checkbox" name="chkIterest">
+								<label for="chkIterest2"><span></span>Cloud</label>
+							</div>
+							<div class="form-checkbox">
+								<input id="chkIterest3" type="checkbox" name="chkIterest">
+								<label for="chkIterest3"><span></span>IP</label>
+							</div>
+							<div class="form-checkbox">
+								<input id="chkIterest4" type="checkbox" name="chkIterest">
+								<label for="chkIterest4"><span></span>DSP</label>
+							</div>
+							<div class="form-checkbox">
+								<input id="chkIterest5" type="checkbox" name="chkIterest">
+								<label for="chkIterest5"><span></span>Package</label>
+							</div>
+							<div class="form-checkbox">
+								<input id="chkIterest6" type="checkbox" name="chkIterest" checked>
+								<label for="chkIterest6"><span></span>HPC</label>
+							</div>
+							<div class="form-checkbox">
+								<input id="chkIterest7" type="checkbox" name="chkIterest">
+								<label for="chkIterest7"><span></span>MDI</label>
+							</div>
+							<div class="form-checkbox">
+								<input id="chkIterest8" type="checkbox" name="chkIterest">
+								<label for="chkIterest8"><span></span>ML/AI</label>
+							</div>
+							<div class="form-checkbox">
+								<input id="chkIterest9" type="checkbox" name="chkIterest">
+								<label for="chkIterest9"><span></span>Auto</label>
+							</div>
+							<div class="form-checkbox">
+								<input id="chkIterest10" type="checkbox" name="chkIterest">
+								<label for="chkIterest10"><span></span>IoT</label>
+							</div>
+							<div class="form-checkbox">
+								<input id="chkIterest11" type="checkbox" name="chkIterest">
+								<label for="chkIterest11"><span></span>PDK/DK</label>
+							</div>
+							<div class="form-checkbox">
+								<input id="chkIterest12" type="checkbox" name="chkIterest">
+								<label for="chkIterest12"><span></span>AMS</label>
+							</div>
+							<div class="form-checkbox">
+								<input id="chkIterest13" type="checkbox" name="chkIterest">
+								<label for="chkIterest13"><span></span>Mobile/Consumer</label>
+							</div>
+						</div>
+					</div>
+				</form>
+				<div class="button-group">
+					<a href="mypage.html" class="button button--gray">Previous</a>
+					<a href="regist_finish1.html" class="button button--blue">Modify</a>
+				</div>
+			</div>
+		</article>
+	</div>
+</div>
+
+<button type="button" class="button__gotop"><span class="for-a11y">Top</span></button>
+
+<footer class="footer">
+    <div class="wraparea">
+		<ul class="list__link">
+			<li><a href="terms.html">Terms</a></li>
+			<li><a href="privacy.html">Privacy</a></li>
+			<li><a href="contac.html">Contact</a></li>
+		</ul>
+		<p class="text__copyright">Copyrightⓒ SAFE Forum 2021. ALL rights reserved.</p>
+    </div>
+</footer>
+
+<script type="text/javascript" src="style/js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="style/js/swiper.min.js"></script>
+<script type="text/javascript" src="style/js/ui.js"></script>
+</body>
+</html>
