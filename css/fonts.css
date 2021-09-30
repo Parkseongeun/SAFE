@@ -1,0 +1,52 @@
+
+@font-face{
+	font-family:'SamsungOne';font-weight:normal;font-style:normal;
+	src:url("../fonts/SamsungOne-400.eot");
+	src:
+	url("../fonts/SamsungOne-400.woff2") format("woff2"),
+	url("../fonts/SamsungOne-400.woff") format("woff"),
+	url("../fonts/SamsungOne-400.ttf") format("truetype");
+}
+@font-face{
+	font-family:'SamsungOne';font-weight:500;font-style:normal;
+	src:url("../fonts/SamsungOne-600.eot");
+	src:
+	url("../fonts/SamsungOne-600.woff2") format("woff2"),
+	url("../fonts/SamsungOne-600.woff") format("woff"),
+	url("../fonts/SamsungOne-600.ttf") format("truetype");
+}
+@font-face{
+	font-family:'SamsungOne';font-weight:bold;font-style:normal;
+	src:url("../fonts/SamsungOne-700.eot");
+	src:
+	url("../fonts/SamsungOne-700.woff2") format("woff2"),
+	url("../fonts/SamsungOne-700.woff") format("woff"),
+	url("../fonts/SamsungOne-700.ttf") format("truetype");
+}
+@font-face{
+	font-family:'SamsungSharpSans';font-weight:normal;font-style:normal;
+	src:url("../fonts/SamsungSharpSans-Regular.eot"),
+		url("../fonts/SamsungSharpSans-Regular.eot?#iefix") format('embedded-opentype');
+	src:
+	url("../fonts/SamsungSharpSans-Regular.woff2") format("woff2"),
+	url("../fonts/SamsungSharpSans-Regular.woff") format("woff"),
+	url("../fonts/SamsungSharpSans-Regular.ttf") format("truetype");
+}
+@font-face{
+	font-family:'SamsungSharpSans';font-weight:500;font-style:normal;
+	src:url("../fonts/SamsungSharpSans-Medium.eot"),
+		url("../fonts/SamsungSharpSans-Medium.eot?#iefix") format('embedded-opentype');
+	src:
+	url("../fonts/SamsungSharpSans-Medium.woff2") format("woff2"),
+	url("../fonts/SamsungSharpSans-Medium.woff") format("woff"),
+	url("../fonts/SamsungSharpSans-Medium.ttf") format("truetype");
+}
+@font-face{
+	font-family:'SamsungSharpSans';font-weight:bold;font-style:normal;
+	src:url("../fonts/SamsungSharpSans-Bold.eot"),
+		url("../fonts/SamsungSharpSans-Bold.eot?#iefix") format('embedded-opentype');
+	src:
+	url("../fonts/SamsungSharpSans-Bold.woff2") format("woff2"),
+	url("../fonts/SamsungSharpSans-Bold.woff") format("woff"),
+	url("../fonts/SamsungSharpSans-Bold.ttf") format("truetype");
+}
