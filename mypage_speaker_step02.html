@@ -1,0 +1,225 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>SAFE Forum 2021</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="css/common.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="wraparea">
+		<h1 class="logo"><a href="main.html"><strong>SAFE Forum</strong> 2021</a></h1>
+		<nav class="box__nav--header">
+			<div class="box__inner">
+				<ul>
+					<li><a href="keynote.html">Keynote</a></li>
+					<li><a href="sessions.html">Partner Session</a></li>
+					<li><a href="pavilion.html">Partner Pavilion</a></li>
+					<li><a href="networking.html">Networking</a></li>
+					<li><a href="registration.html">Registration</a></li>
+				</ul>
+				<button type="button" class="button__close"><span class="for-a11y">Close</span></button>
+			</div>
+		</nav>
+		<div class="box__link">
+			<a href="mypage.html" class="link__my"><span class="for-a11y">Mypage</span></a>
+			<button type="button" class="button__gnb"><span class="for-a11y">Gnb open</span></button>
+		</div>
+    </div>
+</header>
+
+<div class="container mypage"><!-- to.Dev : 마이페이지 mypage class 추가 -->
+	<div class="wraparea">
+		<article class="box__article">
+			<h2 class="text-center">My page</h2>
+		</article>
+        <div class="box__my-info">
+            <div class="box__card--user">
+                <span class="box__image"><img src="images/speakers/01.jpg" alt="@@"></span>
+                <div class="box__info">
+                    <p class="text__name">Jun Seomoon</p>
+                    <p class="text__affiliation">Westgate</p>
+                    <p class="text__position">Manager</p>
+					<a href="mypage_info.html" class="button link__infomation">Edit my information</a>
+                </div>
+            </div>
+            <a href="login_portal.html" class="link__logout">Log out</a>
+        </div>
+		<section class="section__portal">
+			<div class="box__lnb-step">
+				<a href="mypage_speaker_step00.html" class="link__step">
+					<em>Main</em>
+					<span>Session Management</span>
+				</a>
+				<a href="mypage_speaker_step01.html" class="link__step">
+					<em>Step 01</em>
+					<span>Speaker Information</span>
+				</a>
+				<a href="mypage_speaker_step02.html" class="link__step link__step--active">
+					<em>Step 02</em>
+					<span>Presentation Upload</span>
+				</a>
+				<a href="mypage_speaker_step03.html" class="link__step">
+					<em>Step 03</em>
+					<span>Review / Finalize</span>
+				</a>
+			</div>
+			<div class="box__portal">
+				<h3>Presentation Upload</h3>
+				<p class="text__info">Samsung solutions ensure consistently reliable connectivity for data-driven performance. <br>
+				With a comprehensive portfolio of leading-edge technologies</p>
+				<form action="" class="form__regist">
+					<div class="form-control form-group-select">
+						<label for="sltCategory1"><em class="text--required">*</em> Session Category 01</label>
+						<select id="sltCategory1" name="sltCategory1">
+							<option value="" disabled="disabled">Session Category</option>
+							<option value=""></option>
+							<option value=""></option>
+						</select>
+					</div>
+					<div class="form-control form-group-select">
+						<label for="sltCategory2"><em class="text--required">*</em> Session Category 02</label>
+						<select id="sltCategory2" name="sltCategory2">
+							<option value="" disabled="disabled">Session Category</option>
+							<option value=""></option>
+							<option value=""></option>
+						</select><br>
+					</div>
+					<div class="form-group">
+						<label for="chkKeyword"><em class="text--required">*</em> Related Keywords</label>
+						<div class="inline-form-group">
+							<div class="form-checkbox">
+								<input id="chkKeyword1" type="checkbox" name="chkKeyword">
+								<label for="chkKeyword1"><span></span>DRAM</label>
+							</div>
+							<div class="form-checkbox">
+								<input id="chkKeyword2" type="checkbox" name="chkKeyword">
+								<label for="chkKeyword2"><span></span>SSD</label>
+							</div>
+							<div class="form-checkbox">
+								<input id="chkKeyword3" type="checkbox" name="chkKeyword">
+								<label for="chkKeyword3"><span></span>eSTORAGE</label>
+							</div>
+							<div class="form-checkbox">
+								<input id="chkKeyword4" type="checkbox" name="chkKeyword">
+								<label for="chkKeyword4"><span></span>MCP (Multi Chip Package)</label>
+							</div>
+							<div class="form-checkbox">
+								<input id="chkKeyword5" type="checkbox" name="chkKeyword">
+								<label for="chkKeyword5"><span></span>Exynos Processor</label>
+							</div>
+							<div class="form-checkbox">
+								<input id="chkKeyword6" type="checkbox" name="chkKeyword">
+								<label for="chkKeyword6"><span></span>ISOCELL Image Sensor</label>
+							</div>
+							<div class="form-checkbox">
+								<input id="chkKeyword7" type="checkbox" name="chkKeyword">
+								<label for="chkKeyword7"><span></span>Security Solution</label>
+							</div>
+							<div class="form-checkbox">
+								<input id="chkKeyword8" type="checkbox" name="chkKeyword">
+								<label for="chkKeyword8"><span></span>Display IC</label>
+							</div>
+							<div class="form-checkbox">
+								<input id="chkKeyword9" type="checkbox" name="chkKeyword">
+								<label for="chkKeyword9"><span></span>Power IC</label>
+							</div>
+						</div>
+					</div>
+                    <div class="form-control">
+                        <label for="iptPTitle"><em class="text--required">*</em> Presentation Title</label>
+                        <input type="text" id="iptPTitle" aria-required="true"><br>
+                    </div>
+                    <div class="form-group">
+                        <label for="iptDescription2"><em class="text--required">*</em> Description</label>
+                        <div class="form-control" style="margin-top:-8px">
+                            <textarea name="" id="" rows="12" placeholder=""></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group form-group-file">
+                        <div class="box__files">
+                            <em class="text--required">*</em><input class="upload-name" value="Presentation video" disabled="disabled" aria-required="false">
+                            <label for="iptFiles" class="button">File Search</label>
+                            <input type="file" id="iptFiles" class="upload-hidden">
+                        </div>
+                    </div>
+                    <div class="form-group form-group-file">
+                        <div class="box__files">
+                            <em class="text--required">*</em><input class="upload-name" value="Video Thumbnail Image" disabled="disabled" aria-required="false">
+                            <label for="iptFiles2" class="button">File Search</label>
+                            <input type="file" id="iptFiles2" class="upload-hidden">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label><em class="text--required">*</em> Set up chat and Q&A.</label>
+                    </div>
+                    <div class="box_setup">
+						<div class="box__form">
+							<div class="box__form-control">
+								<p><span>Would you like to use Chat? :</span></p>
+								<div class="form-radio">
+									<input id="agreement1_1" type="radio" name="agreement1">
+									<label for="agreement1_1"><span></span>Yes</label>
+								</div>
+								<div class="form-radio">
+									<input id="agreement1_2" type="radio" name="agreement1">
+									<label for="agreement1_2"><span></span>No</label>
+								</div>
+							</div>
+							<div class="box__form-control">
+								<p><span>Would you like to use Q&A? :</span></p>
+								<div class="form-radio">
+									<input id="agreement2_1" type="radio" name="agreement2">
+									<label for="agreement2_1"><span></span>Yes</label>
+								</div>
+								<div class="form-radio">
+									<input id="agreement2_2" type="radio" name="agreement2">
+									<label for="agreement2_2"><span></span>No</label>
+								</div>
+							</div>
+							<div class="box__form-control">
+								<p><span>Please select a response schedule :</span></p>
+								<div class="form-radio">
+									<input id="agreement3_1" type="radio" name="agreement3">
+									<label for="agreement3_1"><span></span>within 3 days</label>
+								</div>
+								<div class="form-radio">
+									<input id="agreement3_2" type="radio" name="agreement3">
+									<label for="agreement3_2"><span></span>within 5 days</label>
+								</div>
+								<div class="form-radio">
+									<input id="agreement3_2" type="radio" name="agreement3">
+									<label for="agreement3_2"><span></span>within 7 days</label>
+								</div>
+							</div>
+						</div>
+					</div>
+                </form>
+				<a href="#" class="button button--block button--large button--blue">Save</a>
+
+			</div>
+		</section>
+	</div>
+</div>
+
+<button type="button" class="button__gotop"><span class="for-a11y">Top</span></button>
+
+<footer class="footer">
+    <div class="wraparea">
+		<ul class="list__link">
+			<li><a href="terms.html">Terms</a></li>
+			<li><a href="privacy.html">Privacy</a></li>
+			<li><a href="contac.html">Contact</a></li>
+		</ul>
+		<p class="text__copyright">Copyrightⓒ SAFE Forum 2021. ALL rights reserved.</p>
+    </div>
+</footer>
+
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/ui.js"></script>
+</body>
+</html>

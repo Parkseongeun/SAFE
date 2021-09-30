@@ -1,0 +1,217 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>SAFE Forum 2021</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="css/common.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="wraparea">
+		<h1 class="logo"><a href="main.html"><strong>SAFE Forum</strong> 2021</a></h1>
+		<nav class="box__nav--header">
+			<div class="box__inner">
+				<ul>
+					<li><a href="keynote.html">Keynote</a></li>
+					<li><a href="sessions.html">Partner Session</a></li>
+					<li><a href="pavilion.html">Partner Pavilion</a></li>
+					<li><a href="networking.html">Networking</a></li>
+					<li><a href="registration.html">Registration</a></li>
+				</ul>
+				<button type="button" class="button__close"><span class="for-a11y">Close</span></button>
+			</div>
+		</nav>
+		<div class="box__link">
+			<a href="mypage.html" class="link__my"><span class="for-a11y">Mypage</span></a>
+			<button type="button" class="button__gnb"><span class="for-a11y">Gnb open</span></button>
+		</div>
+    </div>
+</header>
+
+<div class="container mypage"><!-- to.Dev : 마이페이지 mypage class 추가 -->
+	<div class="wraparea">
+		<article class="box__article">
+			<h2 class="text-center">My page</h2>
+		</article>
+        <div class="box__my-info">
+            <div class="box__card--user">
+                <span class="box__image"><img src="images/speakers/01.jpg" alt="@@"></span>
+                <div class="box__info">
+                    <p class="text__name">Jun Seomoon</p>
+                    <p class="text__affiliation">Westgate</p>
+                    <p class="text__position">Manager</p>
+					<a href="mypage_info.html" class="button link__infomation">Edit my information</a>
+                </div>
+            </div>
+            <a href="login_portal.html" class="link__logout">Log out</a>
+        </div>
+		<section class="section__portal">
+			<div class="box__lnb-step">
+				<a href="mypage_speaker_step00.html" class="link__step">
+					<em>Main</em>
+					<span>Session Management</span>
+				</a>
+				<a href="mypage_speaker_step01.html" class="link__step">
+					<em>Step 01</em>
+					<span>Speaker Information</span>
+				</a>
+				<a href="mypage_speaker_step02.html" class="link__step">
+					<em>Step 02</em>
+					<span>Presentation Upload</span>
+				</a>
+				<a href="mypage_speaker_step03.html" class="link__step link__step--active">
+					<em>Step 03</em>
+					<span>Review / Finalize</span>
+				</a>
+			</div>
+			<div class="box__portal">
+				<h3>Review / Finalize</h3>
+				<p class="text__info">Please check what your input information.</p>
+				<form action="" class="form__regist">
+                    <div class="box__info--user">
+                        <span class="box__image"><img src="images/avatar_m3.jpg" alt="@@"></span>
+                        <ul class="box__info">
+                            <li>
+                                <label><em class="text--required">*</em> Name : </label>
+                                <span class="text__info">Jun Seomoon</span>
+                            </li>
+                            <li>
+                                <label><em class="text--required">*</em> Country : </label>
+                                <span class="text__info">Republic of Korea</span>
+                            </li>
+                            <li>
+                                <label><em class="text--required">*</em> Company Name : </label>
+                                <span class="text__info">Westgate</span>
+                            </li>
+                            <li>
+                                <label><em class="text--required">*</em> Job Title : </label>
+                                <span class="text__info">Manager</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="form-group">
+                        <label for="iptDescription"><em class="text--required">*</em> Speaker Desciption</label>
+                        <p class="text-control">The Exynos W920 is Samsung’s newest offering with an advanced 5nm EUV process for the next generation of wearable devices. It packs two Arm® Cortex®-A55 cores for high-performing yet power-efficient processing and an Arm Mali™-G68 GPU that boasts improved CPU performance around 20-percent and ten times better graphics performance than its predecessor. With upgraded cores and improved performance, the Exynos W920 enables faster application launches and more interactive eye-catching 3D graphical user interface (GUI) on a device’s qHD (960×540) display.</p>
+                    </div>
+					<div class="form-control form-group-select js-active">
+						<label for="sltCategory1"><em class="text--required">*</em> Session Category 01</label>
+						<select id="sltCategory1" name="sltCategory1">
+							<option value="" disabled="disabled">Session Category</option>
+							<option value="">Tech Session</option>
+							<option value=""></option>
+						</select>
+					</div>
+					<div class="form-control form-group-select js-active">
+						<label for="sltCategory2"><em class="text--required">*</em> Session Category 02</label>
+						<select id="sltCategory2" name="sltCategory2">
+							<option value="" disabled="disabled">Session Category</option>
+							<option value="">Tech Session</option>
+							<option value=""></option>
+						</select><br>
+					</div>
+					<div class="form-group">
+						<label for="chkKeyword"><em class="text--required">*</em> Related Keywords</label>
+						<div class="inline-form-group">
+							<div class="form-checkbox">
+								<input id="chkKeyword1" type="checkbox" name="chkKeyword">
+								<label for="chkKeyword1"><span></span>DRAM</label>
+							</div>
+							<div class="form-checkbox">
+								<input id="chkKeyword2" type="checkbox" name="chkKeyword">
+								<label for="chkKeyword2"><span></span>SSD</label>
+							</div>
+							<div class="form-checkbox">
+								<input id="chkKeyword3" type="checkbox" name="chkKeyword">
+								<label for="chkKeyword3"><span></span>eSTORAGE</label>
+							</div>
+							<div class="form-checkbox">
+								<input id="chkKeyword4" type="checkbox" name="chkKeyword">
+								<label for="chkKeyword4"><span></span>MCP (Multi Chip Package)</label>
+							</div>
+							<div class="form-checkbox">
+								<input id="chkKeyword5" type="checkbox" name="chkKeyword" checked>
+								<label for="chkKeyword5"><span></span>Exynos Processor</label>
+							</div>
+							<div class="form-checkbox">
+								<input id="chkKeyword6" type="checkbox" name="chkKeyword">
+								<label for="chkKeyword6"><span></span>ISOCELL Image Sensor</label>
+							</div>
+							<div class="form-checkbox">
+								<input id="chkKeyword7" type="checkbox" name="chkKeyword">
+								<label for="chkKeyword7"><span></span>Security Solution</label>
+							</div>
+							<div class="form-checkbox">
+								<input id="chkKeyword8" type="checkbox" name="chkKeyword">
+								<label for="chkKeyword8"><span></span>Display IC</label>
+							</div>
+							<div class="form-checkbox">
+								<input id="chkKeyword9" type="checkbox" name="chkKeyword">
+								<label for="chkKeyword9"><span></span>Power IC</label>
+							</div>
+						</div>
+					</div>
+                    <div class="form-control js-active">
+                        <label for="iptPTitle"><em class="text--required">*</em> Presentation Title</label>
+                        <input type="text" id="iptPTitle" aria-required="true" value="Manufacturing Excellence"><br>
+                    </div>
+                    <div class="form-group">
+                        <label><em class="text--required">*</em> Overview</label>
+                        <p class="text-control">Samsung Foundry is dedicated to supporting technology preparation for continuously scaling oriented mobile and 
+                            growing HPC and Auto oriented market. The goal is to build RF, HPC, and Auto oriented technologies using GAA 
+                            leadership and stabilized processes. Samsung Foundry is available through Smart Scaling, Application-specific 
+                            Technology Platform.
+                        </p>
+                    </div>
+                    <div class="form-group">
+                        <label for="iptDescription2"><em class="text--required">*</em> Description</label>
+                        <div class="form-control" style="margin-top:-8px">
+                            <textarea name="" id="" rows="12" placeholder=""></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group form-group-file">
+                        <label><em class="text--required">*</em> Presentation video</label>
+                        <div class="box__files">
+                            <input class="upload-name" value="Manufacturing Excellence_video.mp4" disabled="disabled" aria-required="false">
+                            <label for="iptFiles" class="button">File Search</label>
+                            <input type="file" id="iptFiles" class="upload-hidden">
+                            <button type="button" class="button__delete"></button>
+                        </div>
+                    </div>
+                    <div class="form-group form-group-file">
+                        <label><em class="text--required">*</em> Video Thumbnail Image</label>
+                        <div class="box__files js-active">
+                            <input class="upload-name" value="video_thumbnail_image.jpg" disabled="disabled" aria-required="false">
+                            <label for="iptFiles2" class="button">File Search</label>
+                            <input type="file" id="iptFiles2" class="upload-hidden">
+                            <button type="button" class="button__delete"></button>
+                        </div>
+                    </div>
+                </form>
+				<a href="#" class="button button--block button--large button--submit">Submit</a>
+
+			</div>
+		</section>
+	</div>
+</div>
+
+<button type="button" class="button__gotop"><span class="for-a11y">Top</span></button>
+
+<footer class="footer">
+    <div class="wraparea">
+		<ul class="list__link">
+			<li><a href="terms.html">Terms</a></li>
+			<li><a href="privacy.html">Privacy</a></li>
+			<li><a href="contac.html">Contact</a></li>
+		</ul>
+		<p class="text__copyright">Copyrightⓒ SAFE Forum 2021. ALL rights reserved.</p>
+    </div>
+</footer>
+
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/ui.js"></script>
+</body>
+</html>
