@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>SAFE Forum 2021</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="css/common.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="wraparea">
+		<h1 class="logo"><a href="main.html"><strong>SAFE Forum</strong> 2021</a></h1>
+		<nav class="box__nav--header">
+			<div class="box__inner">
+				<ul>
+					<li><a href="keynote.html">Keynote</a></li>
+					<li><a href="sessions.html">Partner Session</a></li>
+					<li><a href="pavilion.html">Partner Pavilion</a></li>
+					<li><a href="networking.html">Networking</a></li>
+					<li><a href="registration.html">Registration</a></li>
+				</ul>
+				<button type="button" class="button__close"><span class="for-a11y">Close</span></button>
+			</div>
+		</nav>
+		<div class="box__link">
+			<a href="mypage.html" class="link__my"><span class="for-a11y">Mypage</span></a>
+			<button type="button" class="button__gnb"><span class="for-a11y">Gnb open</span></button>
+		</div>
+    </div>
+</header>
+
+<div class="container mypage"><!-- to.Dev : 마이페이지 mypage class 추가 -->
+	<div class="wraparea">
+		<article class="box__article">
+			<h2 class="text-center">Exhibitor Portal</h2>
+		</article>
+        <div class="box__my-info box__exhibit-info">
+			<div class="box__info">
+				<p class="text__company">Samsung</p>
+				<p class="text__contact"><a href="mailto:safe2021@saumsung.com">safe2021@saumsung.com</a></p>
+				<a href="resetPW.html" class="button">Reset password</a>
+			</div>
+			<ul class="list__exhibit-board">
+				<li>
+					<span class="title">Visit</span>
+					<span class="num">1248</span>
+				</li>
+				<li>
+					<span class="title">Video View</span>
+					<span class="num">475</span>
+				</li>
+				<li>
+					<span class="title">Documents Download</span>
+					<span class="num">513</span>
+				</li>
+				<li>
+					<span class="title">Q&amp;A</span>
+					<span class="num">8</span>
+				</li>
+			</ul>
+            <a href="login_portal.html" class="link__logout">Log out</a>
+        </div>
+		<p class="text__info">Samsung solutions ensure consistently reliable connectivity for data-driven performance. <br>With a comprehensive portfolio of leading-edge technologies</p>
+		<section class="section__portal">
+			<div class="box__lnb-step">
+				<a href="mypage_exhibit_step01.html" class="link__step">
+					<em>Step 01</em>
+					<span>Basic Information</span>
+				</a>
+				<a href="mypage_exhibit_step02.html" class="link__step">
+					<em>Step 02</em>
+					<span>Videos</span>
+				</a>
+				<a href="mypage_exhibit_step03.html" class="link__step link__step--active">
+					<em>Step 03</em>
+					<span>Documents</span>
+				</a>
+				<a href="mypage_exhibit_step04.html" class="link__step">
+					<em>Step 04</em>
+					<span>Booth Rep Accounts</span>
+				</a>
+				<a href="mypage_exhibit_step05.html" class="link__step">
+					<em>Step 05</em>
+					<span>Review / Finalize</span>
+				</a>
+			</div>
+			<div class="box__portal">
+				<h3>Documents</h3>
+				<p class="text__info">You can Documents (PDF, Word, Excel, Powerpoint) to your booth. <br>
+                It's an ideal place to display your company information, brochures, introductory videos.</p>
+                <div class="box__chk">
+                    <div class="form-radio">
+                        <input type="radio" id="chkAddVideo1" name="chkAddVideo" checked>
+                        <label for="chkAddVideo1"><span></span>Yes. I have documents that I'd like to add to my booth</label>
+                    </div>
+                    <div class="form-radio">
+                        <input type="radio" id="chkAddVideo2" name="chkAddVideo">
+                        <label for="chkAddVideo2"><span></span>No. I don't have any documents to add</label>
+                    </div>
+                </div>
+				<form action="" class="form__regist">
+                    <button type="button" class="button__add"><span>Add another Document</span></button>
+                    <div class="panel">
+                        <div class="panel-form">
+                            <div class="form-control">
+                                <label for="iptDocTitle"><em class="text--required">*</em> Document Title</label>
+                                <input type="text" id="iptDocTitle" aria-required="true">
+                            </div>
+                            <div class="form-group form-group-file">
+                                <div class="box__files">
+                                    <em class="text--required">*</em><input class="upload-name" value="Upload Video" disabled="disabled" aria-required="false">
+                                    <label for="iptVideo1" class="button">File Search</label>
+                                    <input type="file" id="iptVideo1" class="upload-hidden">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-delete">
+                            <button type="button" class="button__delete"><span class="for-a11y">Video Delete</span></button>
+                        </div>
+                    </div>
+
+                    <div class="panel">
+                        <div class="panel-form">
+                            <div class="form-control">
+                                <label for="iptDocTitle"><em class="text--required">*</em> Document Title</label>
+                                <input type="text" id="iptDocTitle" aria-required="true">
+                            </div>
+                            <div class="form-group form-group-file">
+                                <div class="box__files">
+                                    <em class="text--required">*</em><input class="upload-name" value="Upload Video" disabled="disabled" aria-required="false">
+                                    <label for="iptVideo2" class="button">File Search</label>
+                                    <input type="file" id="iptVideo2" class="upload-hidden">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-delete">
+                            <button type="button" class="button__delete"><span class="for-a11y">Video Delete</span></button>
+                        </div>
+                    </div>
+
+                    <div class="panel">
+                        <div class="panel-form">
+                            <div class="form-control">
+                                <label for="iptDocTitle"><em class="text--required">*</em> Document Title</label>
+                                <input type="text" id="iptDocTitle" aria-required="true">
+                            </div>
+                            <div class="form-group form-group-file">
+                                <div class="box__files">
+                                    <em class="text--required">*</em><input class="upload-name" value="Upload Video" disabled="disabled" aria-required="false">
+                                    <label for="iptVideo2" class="button">File Search</label>
+                                    <input type="file" id="iptVideo2" class="upload-hidden">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-delete">
+                            <button type="button" class="button__delete"><span class="for-a11y">Video Delete</span></button>
+                        </div>
+                    </div>
+
+                    <div class="panel">
+                        <div class="panel-form">
+                            <div class="form-control">
+                                <label for="iptDocTitle"><em class="text--required">*</em> Document Title</label>
+                                <input type="text" id="iptDocTitle" aria-required="true">
+                            </div>
+                            <div class="form-group form-group-file">
+                                <div class="box__files">
+                                    <em class="text--required">*</em><input class="upload-name" value="Upload Video" disabled="disabled" aria-required="false">
+                                    <label for="iptVideo2" class="button">File Search</label>
+                                    <input type="file" id="iptVideo2" class="upload-hidden">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-delete">
+                            <button type="button" class="button__delete"><span class="for-a11y">Video Delete</span></button>
+                        </div>
+                    </div>
+
+                </form>
+				<a href="#" class="button button--block button--large button--blue">Save</a>
+
+			</div>
+		</section>
+	</div>
+</div>
+
+<button type="button" class="button__gotop"><span class="for-a11y">Top</span></button>
+
+<footer class="footer">
+    <div class="wraparea">
+		<ul class="list__link">
+			<li><a href="terms.html">Terms</a></li>
+			<li><a href="privacy.html">Privacy</a></li>
+			<li><a href="contac.html">Contact</a></li>
+		</ul>
+		<p class="text__copyright">Copyrightⓒ SAFE Forum 2021. ALL rights reserved.</p>
+    </div>
+</footer>
+
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/ui.js"></script>
+</body>
+</html>

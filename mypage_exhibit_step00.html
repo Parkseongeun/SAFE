@@ -35,49 +35,76 @@
 <div class="container mypage"><!-- to.Dev : 마이페이지 mypage class 추가 -->
 	<div class="wraparea">
 		<article class="box__article">
-			<h2 class="text-center">Speaker Portal</h2>
+			<h2 class="text-center">Exhibitor Portal</h2>
 		</article>
-        <div class="box__my-info">
-            <div class="box__card--user">
-                <span class="box__image"><img src="images/speakers/01.jpg" alt="@@"></span>
-                <div class="box__info">
-                    <p class="text__name">Jun Seomoon</p>
-                    <p class="text__affiliation">Westgate</p>
-                    <p class="text__position">Manager</p>
-					<a href="mypage_info.html" class="button link__infomation">Edit my information</a>
-                </div>
-            </div>
+        <div class="box__my-info box__exhibit-info">
+			<div class="box__info">
+				<p class="text__company">Samsung</p>
+				<p class="text__contact"><a href="mailto:safe2021@saumsung.com">safe2021@saumsung.com</a></p>
+				<a href="resetPW.html" class="button">Reset password</a>
+			</div>
+			<ul class="list__exhibit-board">
+				<li>
+					<span class="title">Visit</span>
+					<span class="num">1248</span>
+				</li>
+				<li>
+					<span class="title">Video View</span>
+					<span class="num">475</span>
+				</li>
+				<li>
+					<span class="title">Documents Download</span>
+					<span class="num">513</span>
+				</li>
+				<li>
+					<span class="title">Q&amp;A</span>
+					<span class="num">8</span>
+				</li>
+			</ul>
             <a href="login_portal.html" class="link__logout">Log out</a>
         </div>
-		<section class="section__portal">
-			<div class="box__lnb-step">
-				<a href="mypage_speaker_step00.html" class="link__step link__step--active">
-					<em>Main</em>
-					<span>Session Management</span>
-				</a>
-				<a href="mypage_speaker_step01.html" class="link__step">
-					<em>Step 01</em>
-					<span>Speaker Information</span>
-				</a>
-				<a href="mypage_speaker_step02.html" class="link__step">
-					<em>Step 02</em>
-					<span>Presentation Upload</span>
-				</a>
-				<a href="mypage_speaker_step03.html" class="link__step">
-					<em>Step 03</em>
-					<span>Review / Finalize</span>
-				</a>
-			</div>
+		<p class="text__info">Samsung solutions ensure consistently reliable connectivity for data-driven performance. <br>With a comprehensive portfolio of leading-edge technologies</p>
+		<section class="section__portal section__portal-main">
 			<div class="box__portal">
-				<h3>Session Management</h3>
-				<p class="text__info">Please check what your input information.</p>
 				<form action="" class="form__regist">
 					<div class="panel">
 						<div class="panel-head">
-							<p class="panel-number">View : 132</p>
-							<div class="panel-title">Manufacturing Excellence</div>
+							<p class="panel-number">Visit : 1248</p>
+							<div class="panel-title">Booth Management</div>
 							<div class="panel-func">
 								<button type="button" class="button button--orange">Edit</button>
+							</div>
+						</div>
+					</div>
+
+                    <div class="panel">
+						<div class="panel-head">
+							<div class="panel-title">Chat Management</div>
+							<div class="panel-func">
+								<div class="box__switch">
+									<label class="switch">
+										<input type="checkbox" checked>
+										<span class="slider"></span>
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="panel-content">
+							<!-- // -------------------------------------- // -->
+						</div>
+					</div>
+
+                    <div class="panel">
+						<div class="panel-head">
+							<p class="panel-number">Questions : 8</p>
+							<div class="panel-title">Q&amp;A Management</div>
+							<div class="panel-func">
+								<div class="box__switch">
+									<label class="switch">
+										<input type="checkbox" checked>
+										<span class="slider"></span>
+									</label>
+								</div>
 							</div>
 						</div>
 						<div class="panel-content">
@@ -121,7 +148,9 @@
 											<span class="box__image"><img src="images/speakers/02.jpg" alt="@@"></span>
 											<span class="text__name">First name Last name</span>
 										</div>
-										<p class="text__context">Samsung solutions ensure consistently</p>
+										<p class="text__context">Samsung will be exhibiting in booth W770, displaying its latest innovations in the appliance category to the builder and 
+											designers, and demonstrating the strong appeal of Samsung appliances in growing millennials with its advanced appliance 
+											designs and technologies.</p>
 										<div class="layer__setting">
 											<button type="button" class="button button__modify">Reply</button>
 										</div>
@@ -137,14 +166,10 @@
 									</div>
 								</li>
 							</ul>
+							<a href="#" class="button link__more">Load more</a>
 						</div>
 					</div>
-					<div class="panel"> <!-- // 비어있을 때 -->
-						<div class="panel-blank">
-							<button type="button" class="button button--orange">Create</button>
-						</div>
-					</div>
-				</form>
+                </form>
 			</div>
 		</section>
 	</div>
