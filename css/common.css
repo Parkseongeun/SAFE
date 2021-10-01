@@ -701,7 +701,7 @@ form .text-notice .text--required{font-size:3vw}
 .mypage .box__article{position:relative}
 .mypage .box__article::after{display:block;content:'';clear:both}
 .mypage .box__article h3{max-width:600px;font-size:30px;font-family:'SamsungSharpSans'}
-.mypage .box__article h3 + .text__info{max-width:720px;font-size:18px;line-height:1.52}
+.mypage .box__article h3 + .text__info{max-width:870px;font-size:18px;line-height:1.52}
 .box__article--myinfo{position:relative;border-radius:22px;padding:123px 185px 92px;background-color:#f7f7f7}
 .box__article--myinfo .link__logout{position:absolute;top:35px;right:35px;font-size:18px;font-weight:500}
 .box__article--myinfo .link__logout:hover{text-decoration: underline}
@@ -718,6 +718,7 @@ form .text-notice .text--required{font-size:3vw}
 .box__article--portal .button.button__enter:hover,
 .box__article--portal .button.button__enter:focus{background-color:#fa773b;color:#fff}
 .box__article--badges .text__info{float:left}
+.box__article.box__article--badges h3 + .text__info{max-width:700px}
 .box__article--badges .box__badges{float:right;margin-top:-50px}
 .box__article--badges .box__badges ul::after{content:'';clear:both;display:block}
 .box__article--badges .box__badges ul li{position:relative;float:left;width:92px;margin:0 9px;text-align:center}
