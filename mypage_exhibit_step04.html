@@ -114,13 +114,13 @@
 							</div>
 						</div>
 					</div>
-                    <button type="button" class="button__add"><span>Add account</span></button>
-                    <div class="list__account">
+                    <button type="button" class="button__add" onclick="FuncLayer.open('#layer__account-add',event)" aria-haspopup="dialog"><span>Add account</span></button>
+                    <ul class="list__account">
                         <li>
                             <div class="text__name">Jun Seomoon</div>
                             <div class="text__email">jun0326@naver.com</div>
                             <div class="box__modify">
-                                <button type="button" class="button">Modify</button>
+                                <button type="button" class="button" onclick="FuncLayer.open('#layer__account-modify',event)" aria-haspopup="dialog">Modify</button>
                             </div>
                             <div class="box__delete">
                                 <button type="button" class="button__delete"><span class="for-a11y">Delete</span></button>
@@ -130,7 +130,7 @@
                             <div class="text__name">Seongeun Park</div>
                             <div class="text__email">separk@daum.net</div>
                             <div class="box__modify">
-                                <button type="button" class="button">Modify</button>
+                                <button type="button" class="button" onclick="FuncLayer.open('#layer__account-modify',event)" aria-haspopup="dialog">Modify</button>
                             </div>
                             <div class="box__delete">
                                 <button type="button" class="button__delete"><span class="for-a11y">Delete</span></button>
@@ -140,18 +140,81 @@
                             <div class="text__name">Youngjun Go</div>
                             <div class="text__email">youngjun-go@gmail.com</div>
                             <div class="box__modify">
-                                <button type="button" class="button">Modify</button>
+                                <button type="button" class="button" onclick="FuncLayer.open('#layer__account-modify',event)" aria-haspopup="dialog">Modify</button>
                             </div>
                             <div class="box__delete">
                                 <button type="button" class="button__delete"><span class="for-a11y">Delete</span></button>
                             </div>
                         </li>
-                    </div>
+                    </ul>
                 </form>
 				<a href="#" class="button button--block button--large button--blue">Save</a>
-
 			</div>
 		</section>
+		
+		<!-- to.Dev : Add Account Add 팝업 -->
+		<div class="box__layer" id="layer__account-add" role="dialog">
+			<div class="box__layer-inner">
+				<div class="box__layer-header">
+					<h2>Add Booth Rep Account</h2>
+					<button class="button__closed" onclick="FuncLayer.closed()">닫기</button>
+				</div>
+				<div class="box__layer-content">
+					<div class="form__account">
+						<div class="form-control">
+							<label for="iptFName">First Name</label>
+							<input type="text" id="iptFName" aria-required="true">
+						</div>
+						<div class="form-control">
+							<label for="iptLName">Last Name</label>
+							<input type="text" id="iptLName" aria-required="true">
+						</div>
+						<div class="form-control form-control--email">
+							<label for="iptID">E-mail Address (ID)</label>
+							<input type="email" id="iptID" aria-required="true">
+						</div>
+					</div>
+				</div>
+				<div class="box__layer-footer">
+					<div class="box__button">
+						<button type="submit" class="button button--blue">Save</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- // to.Dev : Add Account Add 팝업 -->
+		<!-- to.Dev : Add Account Modify 팝업 -->
+		<div class="box__layer" id="layer__account-modify" role="dialog">
+			<div class="box__layer-inner">
+				<div class="box__layer-header">
+					<h2>Add Booth Rep Account</h2>
+					<button class="button__closed" onclick="FuncLayer.closed()">닫기</button>
+				</div>
+				<div class="box__layer-content">
+					<div class="form__account">
+						<div class="form-control js-active">
+							<label for="iptFName">First Name</label>
+							<input type="text" id="iptFName" value="Seomoon" aria-required="true">
+						</div>
+						<div class="form-control js-active">
+							<label for="iptLName">Last Name</label>
+							<input type="text" id="iptLName" value="Jun" aria-required="true">
+						</div>
+						<div class="form-control form-control--email js-active">
+							<label for="iptID">E-mail Address (ID)</label>
+							<input type="email" id="iptID" value="jun0326@naver.com" aria-required="true">
+						</div>
+					</div>
+				</div>
+				<div class="box__layer-footer">
+					<div class="box__button">
+						<button type="submit" class="button button--blue">Save</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- // to.Dev : Add Account Modify 팝업 -->
+
 	</div>
 </div>
 

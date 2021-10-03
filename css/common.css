@@ -84,7 +84,7 @@ img{max-width:100%}
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
 body,html,.wraparea{min-width:1420px}
 }
-h2{font-family:'SamsungSharpSans';padding:50px 0 16px;font-size:44px;letter-spacing:-1.5px;color:#111}
+h2{font-family:'SamsungSharpSans', san-serif;padding:50px 0 16px;font-size:44px;letter-spacing:-1.2px;color:#111}
 h2 + .text__info{margin-top:-16px;margin-bottom:22px;font-size:18px;color:#000;word-break:break-word}
 h3{padding:50px 0 12px;font-size:36px;font-weight:bold}
 h3 + .text__info{font-size:18px;line-height:1.5;color:#000}
@@ -139,8 +139,8 @@ h3 + .text__info{font-size:3.5vw}
 }
 @media (max-width:768px){
 	.box__layer-inner{padding:3.5vw}
-	.box__layer-header h2{font-size:7vw}
-	.box__layer-inner .button__closed{top:0}
+	.box__layer-header h2{text-align:left;font-size:6vw}
+	.box__layer-inner .button__closed{top:0;width:24px;height:24px}
 	.box__layer-content .text{font-size:4vw}
 	.box__layer-footer{padding:0 0 4vw}
 	.box__layer--alert .box__layer-inner .button__closed{top:3vw;right:3vw}
@@ -151,7 +151,7 @@ h3 + .text__info{font-size:3.5vw}
 
 /* gnb */
 .header{position:relative;z-index:10;height:81px;background-color:#fff}
-.header .logo{position:absolute;top:25px;left:0;font-family:'SamsungSharpSans';font-size:24px;font-weight:500;color:#111;letter-spacing:0}
+.header .logo{position:absolute;top:25px;left:0;font-family:'SamsungSharpSans', san-serif;font-size:24px;font-weight:500;color:#111;letter-spacing:0}
 .header .box__nav--header{position:absolute;top:27px;left:50%;transform:translateX(-50%);-webkit-transform:translateX(-50%);font-size:0;line-height:0}
 .header .box__nav--header::after{content:'';display:block;clear:both}
 .header .box__nav--header ul{text-align:center}
@@ -174,7 +174,7 @@ h3 + .text__info{font-size:3.5vw}
 .header .box__link .box__lang.active a.link__lang::after{-webkit-transform:rotateZ(180deg);transform:rotateZ(180deg)}
 .header .box__lang .list a{display:block;position:relative;width:auto;height:auto;margin:0 16px;padding-bottom:8px;background:none;color:#969696}
 .header .box__lang .list a:hover{color:#444}
-.header .box__lang .list a span{font-family:'SamsungSharpSans';font-weight:bold;font-size:16px;line-height:1}
+.header .box__lang .list a span{font-family:'SamsungSharpSans', san-serif;font-weight:bold;font-size:16px;line-height:1}
 .header .box__lang .list a.on::after{content:'';position:absolute;bottom:6px;left:0;right:0;display:block;border-bottom:2px solid #000}
 .header .box__lang .list a.on span{margin-bottom:14px;color:#000}
 .header .button__gnb{display:none;margin-left:10px;width:29px;height:29px;vertical-align:top;background:url(../images/common/ico_gnb-open.png);background-size:100% auto}
@@ -233,10 +233,10 @@ h3 + .text__info{font-size:3.5vw}
 .box__article--visual #visualVideo video{position:absolute;z-index:0;top:0;left:0;width:100%;height:100%}
 .box__article--visual #visualVideo .vjs{position:absolute;z-index:0;top:0;left:0;width:100%;height:100%}
 .box__article--visual .text__visual{position:absolute;z-index:2;top:235px;left:100px}
-.box__article--visual .text__visual .text1{font-family:'SamsungSharpSans';font-size:74px;font-weight:bold;color:#fff;line-height:1.13;letter-spacing:1.5px}
+.box__article--visual .text__visual .text1{font-family:'SamsungSharpSans', san-serif;font-size:74px;font-weight:bold;color:#fff;line-height:1.13;letter-spacing:1.5px}
 .box__article--visual .text__visual .text1 span{font-weight:normal;color:#fff}
-.box__article--visual .text__visual .text2{display:inline-block;margin-top:8px;font-family:'SamsungSharpSans';font-size:23px;font-weight:300;color:#fff;letter-spacing:1.8px}
-.box__article--visual .text__visual .text3{display:inline-block;margin-top:3px;font-family:'SamsungSharpSans';font-size:23px;font-weight:300;color:#fff;letter-spacing:1.8px}
+.box__article--visual .text__visual .text2{display:inline-block;margin-top:8px;font-family:'SamsungSharpSans', san-serif;font-size:23px;font-weight:300;color:#fff;letter-spacing:1.8px}
+.box__article--visual .text__visual .text3{display:inline-block;margin-top:3px;font-family:'SamsungSharpSans', san-serif;font-size:23px;font-weight:300;color:#fff;letter-spacing:1.8px}
 .box__article--visual .text__visual .link__regist{width:172px;margin-top:22px;font-size:16px;font-weight:500}
 .list__overview li{display:table;margin-bottom:11px}
 .list__overview li::after{content:none;clear:both;display:block}
@@ -422,8 +422,8 @@ a.box__card--speaker .box__info .text__session{padding-top:15px}
 .box__article--keynote:after{content:'';clear:both;display:block}
 .box__article--keynote .box__title{display:-webkit-flex;display:flex;flex-direction:column;justify-content:center;flex:none;width:387px;padding-bottom:40px;text-align:center}
 .box__article--keynote .box__title h2{padding-top:0;line-height:1.4;letter-spacing:-1px}
-.box__article--keynote .box__title h2 span{display:block;font-family:'SamsungSharpSans';font-weight:normal;font-size:25px}
-.box__article--keynote .box__title h2 strong{display:block;font-family:'SamsungSharpSans';font-weight:bold;font-size:44px;margin-top:-6px}
+.box__article--keynote .box__title h2 span{display:block;font-family:'SamsungSharpSans', san-serif;font-weight:normal;font-size:25px}
+.box__article--keynote .box__title h2 strong{display:block;font-family:'SamsungSharpSans', san-serif;font-weight:bold;font-size:44px;margin-top:-6px}
 .box__article--keynote .box__title > span{display:block;margin-top:-10px;font-size:18px;font-weight:300;color:#555}
 .box__article--keynote .box__content{width:100%}
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
@@ -1219,7 +1219,7 @@ form .text-notice .text--required{font-size:3vw}
 .section__portal .box__portal{width:100%;margin-right:40px}
 .section__portal-main .box__portal{margin-right:0}
 .section__portal-main .box__portal .form__regist{margin-top:0}
-.section__portal .box__portal h3{padding-top:0}
+.section__portal .box__portal h3{padding-top:0;font-family:'Samsung Sharp Sans',sans-serif}
 .section__portal .box__chk{padding:30px 40px 0 40px}
 .section__portal form{margin-top:40px;margin-bottom:60px}
 .box_setup .box__form{padding:34px 42px 28px;background-color:#fff;border:1px solid #e6e6e6;border-radius:20px}
@@ -1255,10 +1255,31 @@ form .text-notice .text--required{font-size:3vw}
 .box__info--user .box__info li{margin-bottom:12px}
 .box__info--user .box__info label{font-size:18px;color:#8f8f8f}
 .box__info--user .box__info .text__info{font-size:18px;color:#000}
-.button__add{margin:30px 0 20px;font-size:0;background-color:transparent}
+.button__add{margin:40px 0 20px;font-size:0;background-color:transparent}
 .button__add span{display:inline-block;padding-top:3px;font-size:18px;color:#006bea;vertical-align:middle}
 .button__add::before{content:'';display:inline-block;margin-right:8px;width:28px;height:28px;background:url(../images/common/ico_more-plus.png) no-repeat 0 0;background-size:100% auto;transition:all 0.4s;vertical-align:middle}
 .button__add:hover::before{-webkit-transform:rotate(90deg);transform:rotate(90deg)}
+.list__account{display:table;table-layout:fixed;width:100%;margin-bottom:60px}
+.list__account li{padding:36px 20px 7px 20px;border-bottom:1px solid #8f8f8f}
+.list__account li:first-child{padding-top:10px}
+.list__account .text__name{display:table-cell;width:300px;max-width:40%;font-size:18px;color:#8f8f8f}
+.list__account .text__email{display:table-cell;width:390px;max-width:40%;font-size:18px;color:#8f8f8f}
+.list__account .box__modify{display:table-cell;width:10%}
+.list__account .box__delete{display:table-cell;width:5%;text-align:center}
+.list__account .box__delete .button__delete{background-color:transparent;font-size:0}
+.list__account .box__delete .button__delete::after{content:'';display:inline-block;width:19px;height:19px;margin:10px;background:url(../images/common/ico_delete.png) no-repeat 0 0;background-size:100% auto}
+.form__account{padding:40px 0 20px;overflow:hidden}
+.form__account .form-control{float:left;width:47%}
+.form__account .form-control + .form-control{margin-left:6%}
+.form__account .form-control--email{width:100%;margin-left:0 !important}
+.form__account .form-control > input{padding-left:0}
+.list__chat-management li{display:block;position:relative;margin-top:35px;padding-left:30px;text-align:right}
+.list__chat-management li::before{content:'';position:absolute;top:50%;left:8px;width:11px;height:11px;margin-top:-5px;border-radius:50%;background-color:#bbb}
+.list__chat-management li.active::before{background-color:#39b54a}
+.list__chat-management li::after{content:'';clear:both;display:block}
+.list__chat-management .box__image{float:left;width:56px;padding-top:56px;border-radius:50vh}
+.list__chat-management .text__name{float:left;font-size:16px;padding-left:25px;padding-top:20px}
+.list__chat-management .button{min-width:100px;margin-left:30px}
 .panel{position:relative;border:8px solid #ddd;border-radius:24px;padding:50px 40px 60px;-webkit-box-sizing:border-box;box-sizing:border-box}
 .panel::after{content:'';clear:both;display:block}
 .panel + .panel{margin-top:30px}
@@ -1272,6 +1293,28 @@ form .text-notice .text--required{font-size:3vw}
 .panel .panel-delete .button__delete{background-color:transparent;font-size:0}
 .panel .panel-delete .button__delete::after{content:'';display:inline-block;width:19px;height:19px;margin:10px;background:url(../images/common/ico_delete.png) no-repeat 0 0;background-size:100% auto}
 .panel .panel-blank{text-align:center;padding-top:50px;padding-bottom:50px}
+.list__document{margin:10px 0 80px}
+.list__document li{display:table;width:100%;table-layout:fixed;margin-bottom:25px}
+.list__document li .box{display:table-cell;width:130px;vertical-align:middle}
+.list__document li .button{display:inline-block;vertical-align:middle;min-width:110px;margin-right:24px}
+.list__document li .text__info{display:table-cell;vertical-align:middle;height:100%;font-size:18px;line-height:1.25em;color:#757575}
+.box__finalize{margin-bottom:80px}
+.box__review-booth ~ .box__review-booth{margin-top:40px}
+.box__review-booth .text__title{margin-bottom:12px;font-size:18px;color:#8f8f8f}
+.box__review-booth .text__company{font-size:40px;font-weight:bold;font-family:'SamsungSharpSans', san-serif;margin-left:4px;position:relative;bottom:-4px}
+.box__review-booth .box__logo{display:block;text-align:center;padding:10px 0 20px}
+.box__review-booth .image__logo{width:550px;max-width:70%}
+.box__review-booth .image__banner{width:690px;max-width:90%}
+.box__review-booth .text__desc{margin-left:14px;font-size:18px}
+.box__review-booth .text__website{font-size:18px}
+.box__review-booth .box__iframe{position:relative;width:100%;max-width:753px;height:0;padding-top:43%;margin-bottom:20px}
+.box__review-booth .box__iframe iframe{position:absolute;top:0;left:0;width:100%;height:100%}
+.list__video{margin:40px 0 80px}
+.list__video li{display:table;width:100%;table-layout:fixed;margin-bottom:25px}
+.list__video li .icon{display:table-cell;width:54px;vertical-align:middle;font-size:0}
+.list__video li .icon img{display:inline-block;vertical-align:middle;width:38px}
+.list__video li .text__info{display:table-cell;vertical-align:middle;height:100%;font-size:18px;line-height:1.25em;color:#757575;background-color:transparent}
+.list__video li .text__info:hover{color:#222}
 @media (max-width:1419px){
 	.section__portal{margin:7vw 24px 0}
 	.section__portal .box__lnb-step{width:22vw;margin-right:4vw}
@@ -1284,10 +1327,35 @@ form .text-notice .text--required{font-size:3vw}
 	.box_setup .box__form-control .form-radio{margin-right:16px;margin-left:0}
 	.box_setup .box__form-control p{display:block;width:100%}
 	.box_setup .box__form-control:last-child{text-align:left}
+	.button__add{margin:3vw 0 1vw}
+	.button__add::before{margin-right:1vw;width:3vw;height:3vw}
+	.button__add span{font-size:2vw}
 	.list__messages-qna .box__card--messages .text__context{width:auto}
+	.list__account li{padding:20px 12px 5px 12px}
+	.list__account .text__name{font-size:15px}
+	.list__account .text__email{font-size:15px}
+	.list__chat-management .text__name{font-size:1.7vw}
+	.list__chat-management .text__time{font-size:1.7vw}
 	.panel{border:4px solid #ddd;border-radius:22px;padding:3vw 3vw 3vw 3vw}
 	.panel .panel-head .panel-number{font-size:1.5vw}
 	.panel .panel-head .panel-title{font-size:2.5vw}
+	.list__document li{margin-bottom:5vw}
+	.list__document li .box{width:13vw}
+	.list__document li .button{min-width:11vw;margin-right:2vw}
+	.list__document li .text__info{font-size:1.75vw}
+	.box__finalize{margin-bottom:5vw}
+	.box__review-booth ~ .box__review-booth{margin-top:2vw}
+	.box__review-booth .text__title{margin-bottom:6px;font-size:1.75vw}
+	.box__review-booth .text__company{font-size:3vw;margin-left:2px;bottom:-2px}
+	.box__review-booth .box__logo{padding:1.5vw 0 3vw}
+	.box__review-booth .text__desc{margin-left:7px;font-size:1.75vw}
+	.box__review-booth .text__website{font-size:1.75vw}
+	.box__review-booth .box__iframe{padding-top:58%}
+	.list__video{margin:2vw 0 7vw}
+	.list__video li{margin-bottom:2vw}
+	.list__video li .icon{width:6.7vw}
+	.list__video li .icon img{width:5vw}
+	.list__video li .text__info{font-size:1.75vw}
 }
 @media (max-width:768px){
 	.section__portal{display:block;margin:7vw 12px 0}
@@ -1312,6 +1380,21 @@ form .text-notice .text--required{font-size:3vw}
 	.button__add{margin:5vw 0 3vw}
 	.button__add::before{margin-right:2vw;width:5vw;height:5vw}
 	.button__add span{font-size:4vw}
+	.list__account{margin-bottom:10vw}
+	.list__account li{position:relative;display:block;padding:20px 6px 6px 6px}
+	.list__account li:first-child{padding-top:0}
+	.list__account .text__name,
+	.list__account .text__email,
+	.list__account .box__modify,
+	.list__account .box__delete{max-width:100%;width:auto;margin-top:4px;display:block;font-size:3.5vw}
+	.list__account .box__modify{padding-top:2px}
+	.list__account .box__delete{position:absolute;top:50%;right:0;margin-top:-10px}
+	.form__account{padding:0 0 3vw}
+	.list__chat-management li{padding-left:20px}
+	.list__chat-management li::before{left:0}
+	.list__chat-management .text__name{padding-left:12px;max-width:26vw;text-align:left}
+	.list__chat-management .text__time{display:block;margin-bottom:4px}
+	.list__chat-management .button{min-width:18vw}
 	.panel{border-radius:3vw;padding:6vw 4vw}
 	.panel + .panel{margin-top:4vw}
 	.panel .panel-head .panel-number{font-size:3.5vw}
@@ -1321,6 +1404,23 @@ form .text-notice .text--required{font-size:3vw}
 	.panel .panel-form{margin:-6vw 0 -3vw}
 	.panel .panel-delete{position:static;-webkit-transform:translateY(0);transform:translateY(0);margin:3vw 0 -5vw 0;float:right}
 	.panel .panel-delete .button__delete::after{margin:5px}
+	.list__document{margin:1vw 0 10vw}
+	.list__document li{margin-bottom:4vw}
+	.list__document li .box{width:25vw}
+	.list__document li .button{min-width:22vw}
+	.list__document li .text__info{font-size:3.5vw}
+	.box__finalize{margin-bottom:5vw}
+	.box__review-booth ~ .box__review-booth{margin-top:2vw}
+	.box__review-booth .text__title{margin-bottom:6px;font-size:3.5vw}
+	.box__review-booth .text__company{font-size:7vw;margin-left:2px;bottom:-2px}
+	.box__review-booth .box__logo{padding:1.5vw 0 3vw}
+	.box__review-booth .text__desc{margin-left:7px;font-size:3.5vw}
+	.box__review-booth .text__website{font-size:3.5vw}
+	.list__video{margin:1vw 0 7vw}
+	.list__video li{margin-bottom:3vw}
+	.list__video li .icon{width:11vw}
+	.list__video li .icon img{width:8vw}
+	.list__video li .text__info{font-size:3.5vw}
 }
 
 .box__switch-wrap{clear:both;margin-top:76px}
