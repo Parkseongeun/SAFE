@@ -84,7 +84,7 @@ img{max-width:100%}
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
 body,html,.wraparea{min-width:1420px}
 }
-h2{font-family:'SamsungSharpSans', san-serif;padding:50px 0 16px;font-size:44px;letter-spacing:-1.2px;color:#111}
+h2{font-family:'SamsungSharpSans', sans-serif;padding:50px 0 16px;font-size:44px;letter-spacing:-1.2px;color:#111}
 h2 + .text__info{margin-top:-16px;margin-bottom:22px;font-size:18px;color:#000;word-break:break-word}
 h3{padding:50px 0 12px;font-size:36px;font-weight:bold}
 h3 + .text__info{font-size:18px;line-height:1.5;color:#000}
@@ -151,7 +151,7 @@ h3 + .text__info{font-size:3.5vw}
 
 /* gnb */
 .header{position:relative;z-index:10;height:81px;background-color:#fff}
-.header .logo{position:absolute;top:25px;left:0;font-family:'SamsungSharpSans', san-serif;font-size:24px;font-weight:500;color:#111;letter-spacing:0}
+.header .logo{position:absolute;top:25px;left:0;font-family:'SamsungSharpSans', sans-serif;font-size:24px;font-weight:500;color:#111;letter-spacing:0}
 .header .box__nav--header{position:absolute;top:27px;left:50%;transform:translateX(-50%);-webkit-transform:translateX(-50%);font-size:0;line-height:0}
 .header .box__nav--header::after{content:'';display:block;clear:both}
 .header .box__nav--header ul{text-align:center}
@@ -174,7 +174,7 @@ h3 + .text__info{font-size:3.5vw}
 .header .box__link .box__lang.active a.link__lang::after{-webkit-transform:rotateZ(180deg);transform:rotateZ(180deg)}
 .header .box__lang .list a{display:block;position:relative;width:auto;height:auto;margin:0 16px;padding-bottom:8px;background:none;color:#969696}
 .header .box__lang .list a:hover{color:#444}
-.header .box__lang .list a span{font-family:'SamsungSharpSans', san-serif;font-weight:bold;font-size:16px;line-height:1}
+.header .box__lang .list a span{font-family:'SamsungSharpSans', sans-serif;font-weight:bold;font-size:16px;line-height:1}
 .header .box__lang .list a.on::after{content:'';position:absolute;bottom:6px;left:0;right:0;display:block;border-bottom:2px solid #000}
 .header .box__lang .list a.on span{margin-bottom:14px;color:#000}
 .header .button__gnb{display:none;margin-left:10px;width:29px;height:29px;vertical-align:top;background:url(../images/common/ico_gnb-open.png);background-size:100% auto}
@@ -232,11 +232,12 @@ h3 + .text__info{font-size:3.5vw}
 .box__article--visual #visualVideo{position:absolute;z-index:0;top:0;left:0;width:100%;height:100%}
 .box__article--visual #visualVideo video{position:absolute;z-index:0;top:0;left:0;width:100%;height:100%}
 .box__article--visual #visualVideo .vjs{position:absolute;z-index:0;top:0;left:0;width:100%;height:100%}
-.box__article--visual .text__visual{position:absolute;z-index:2;top:235px;left:100px}
-.box__article--visual .text__visual .text1{font-family:'SamsungSharpSans', san-serif;font-size:74px;font-weight:bold;color:#fff;line-height:1.13;letter-spacing:1.5px}
+.box__article--visual .text__visual{position:absolute;z-index:2;top:138px;left:100px}
+.box__article--visual .text__visual .text1{font-family:'SamsungSharpSans', sans-serif;font-size:96px;font-weight:bold;color:#fff;line-height:1;letter-spacing:1.5px}
+.box__article--visual .text__visual .text1 sup{font-weight:normal;font-size:0.36em;position:relative;top:-10px;left:3px}
 .box__article--visual .text__visual .text1 span{font-weight:normal;color:#fff}
-.box__article--visual .text__visual .text2{display:inline-block;margin-top:8px;font-family:'SamsungSharpSans', san-serif;font-size:23px;font-weight:300;color:#fff;letter-spacing:1.8px}
-.box__article--visual .text__visual .text3{display:inline-block;margin-top:3px;font-family:'SamsungSharpSans', san-serif;font-size:23px;font-weight:300;color:#fff;letter-spacing:1.8px}
+.box__article--visual .text__visual .text2{display:inline-block;margin-top:8px;font-family:'SamsungSharpSans', sans-serif;font-size:23px;font-weight:300;color:#fff;letter-spacing:1.8px}
+.box__article--visual .text__visual .text3{display:inline-block;margin-top:3px;font-family:'SamsungSharpSans', sans-serif;font-size:28px;font-weight:300;color:#fff;letter-spacing:1.8px}
 .box__article--visual .text__visual .link__regist{width:172px;margin-top:22px;font-size:16px;font-weight:500}
 .list__overview li{display:table;margin-bottom:11px}
 .list__overview li::after{content:none;clear:both;display:block}
@@ -256,9 +257,9 @@ h3 + .text__info{font-size:3.5vw}
 .box__article--schedule .wraparea{-webkit-box-sizing:border-box;box-sizing:border-box}
 .box__article--schedule h2{padding-top:0}
 .box__article--schedule h2 + .text__info{margin-top:-21px;margin-bottom:58px}
-.list__schedule{margin:0 120px}
+.list__schedule{margin:0 120px;text-align:center;font-size:0}
 .list__schedule::after{content:'';display:block;clear:both}
-.list__schedule .list-item{position:relative;float:left;width:25%;padding:0 18px;-webkit-box-sizing:border-box;box-sizing:border-box}
+.list__schedule .list-item{position:relative;display:inline-block;width:25%;padding:0 18px;-webkit-box-sizing:border-box;box-sizing:border-box}
 .list__schedule .box__zone{position:relative;display:-webkit-flex;display:flex;width:100%;height:0;padding-top:100%;-webkit-transition:-webkit-transform 0.4s;transition:transform 0.4s}
 .list__schedule .box__zone:hover{-webkit-transform:scale(1.015);transform:scale(1.015)}
 .list__schedule .box__zone .box__inner{position:absolute;top:0;left:0;right:0;bottom:0;display:-webkit-flex;display:flex;flex-direction:column;justify-content:center;align-items:center;background-color:#fff;border-radius:50vh;border:5px solid #ececec}
@@ -296,7 +297,7 @@ a.box__card--speaker .box__info .text__session{padding-top:15px}
 .box__card--speaker .box__info .text__affiliation{display:block;padding-top:3px;font-size:16px;overflow:hidden;width:100%}
 .box__card--speaker .box__info .text__position{display:block;padding-top:3px;font-size:16px;overflow:hidden;width:100%}
 .box__card--speaker .box__info .link__more{margin-top:16px;margin-left:2px}
-.box__article--networking{background-color:#eee;margin-top:100px}
+.box__article--networking{background-color:#eee;margin-top:60px}
 .box__networking{padding:40px 0 76px}
 .box__networking .link__more{display:block;width:140px;margin:50px auto 0}
 .list__networking-person{font-size:0;text-align:center}
@@ -309,12 +310,19 @@ a.box__card--speaker .box__info .text__session{padding-top:15px}
 .list__networking-person .box__info .text__info span{font-size:12px;color:#555555;display:block;white-space:nowrap}
 .list__networking-person .box__info .link__info{display:inline-block;margin-top:5px;width:28px;height:28px;background:url(../images/common/ico_more-plus.png) no-repeat 0 0;background-size:100% auto;transition:all 0.4s}
 .list__networking-person .box__info .link__info:hover{-webkit-transform:rotate(90deg);transform:rotate(90deg)}
+.box__article--partner{padding-top:20px;padding-bottom:80px;background-color:#000}
+.box__article--partner .row{overflow:hidden}
+.box__article--partner .row .col-md-6{float:left;width:50%}
+.box__article--partner h2,
+.box__article--partner .text__info{color:#fff}
+.box__article--partner .image{display:block;max-width:100%;margin-top:20px}
 @media (max-width:1419px){
 .box__article--visual .wraparea{padding-top:57%}
-.box__article--visual .text__visual{top:15vw;left:6vw}
-.box__article--visual .text__visual .text1{font-size:4.4vw}
+.box__article--visual .text__visual{top:10vw;left:6vw}
+.box__article--visual .text__visual .text1{font-size:6vw}
+.box__article--visual .text__visual .text1 sup{top:-0.6vw}
 .box__article--visual .text__visual .text2{margin-top:1vw;font-size:1.7vw}
-.box__article--visual .text__visual .text3{display:block;margin-top:0;font-size:1.7vw}
+.box__article--visual .text__visual .text3{display:block;font-size:2.2vw}
 .box__article--visual .text__visual .link__regist{display:block;margin-top:-1.5vw;width:16vw;font-size:1.3vw}
 .box__article--welcome .text__info{padding:5vw 6vw 0;font-size:1.75vw}
 .box__article--welcome h2{font-size:1.75vw}
@@ -361,7 +369,7 @@ a.box__card--speaker .box__info .text__session{padding-top:15px}
 .box__article--visual{padding:0}
 .box__article--visual .wraparea{padding-top:148.56%}
 .box__article--visual .text__visual{left:8vw;top:18vw}
-.box__article--visual .text__visual .text1{font-size:9vw}
+.box__article--visual .text__visual .text1{font-size:11vw}
 .box__article--visual .text__visual .text2{font-size:3.5vw;letter-spacing:-0.5px}
 .box__article--visual .text__visual .text3{font-size:3.5vw}
 .box__article--visual .text__visual .link__regist{margin-top:0;width:30vw;font-size:3vw}
@@ -399,6 +407,9 @@ a.box__card--speaker .box__info .text__session{padding-top:15px}
 .list__networking-person li{width:22%;margin:3.5vw 1.5% 0}
 .list__networking-person .box__image{width:13vw;padding-top:13vw}
 .list__networking-person .text__name{font-size:3vw;line-height:1.25}
+.box__article--partner{padding-top:2vw;padding-bottom:8vw}
+.box__article--partner .row .col-md-6{float:none;width:100%}
+.box__article--partner .row .col-md-6 + .col-md-6{margin-top:4vw}
 }
 
 /* Keynote */
@@ -422,13 +433,10 @@ a.box__card--speaker .box__info .text__session{padding-top:15px}
 .box__article--keynote:after{content:'';clear:both;display:block}
 .box__article--keynote .box__title{display:-webkit-flex;display:flex;flex-direction:column;justify-content:center;flex:none;width:387px;padding-bottom:40px;text-align:center}
 .box__article--keynote .box__title h2{padding-top:0;line-height:1.4;letter-spacing:-1px}
-.box__article--keynote .box__title h2 span{display:block;font-family:'SamsungSharpSans', san-serif;font-weight:normal;font-size:25px}
-.box__article--keynote .box__title h2 strong{display:block;font-family:'SamsungSharpSans', san-serif;font-weight:bold;font-size:44px;margin-top:-6px}
+.box__article--keynote .box__title h2 span{display:block;font-family:'SamsungSharpSans', sans-serif;font-weight:normal;font-size:25px}
+.box__article--keynote .box__title h2 strong{display:block;font-family:'SamsungSharpSans', sans-serif;font-weight:bold;font-size:44px;margin-top:-6px}
 .box__article--keynote .box__title > span{display:block;margin-top:-10px;font-size:18px;font-weight:300;color:#555}
 .box__article--keynote .box__content{width:100%}
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-	.list__keynote{width:1033px}
-}
 .list__keynote:after{content:'';clear:both;display:block}
 .list__keynote li{float:left;width:-webkit-calc(50% - 7px);width:calc(50% - 7px);margin-bottom:40px}
 .list__keynote li:nth-child(even){margin-left:14px}
@@ -436,6 +444,9 @@ a.box__card--speaker .box__info .text__session{padding-top:15px}
 .list__keynote.list--col3 li{width:-webkit-calc(33.34% - 14px);width:calc(33.34% - 14px)}
 .list__keynote.list--col3 li:nth-child(odd){margin-left:14px !important}
 .list__keynote.list--col3 li:nth-child(3n+1){margin-left:0 !important}
+.list__keynote.list--col4 li{width:-webkit-calc(25% - 14px);width:calc(25% - 14px)}
+.list__keynote.list--col4 li:nth-child(odd){margin-left:14px !important}
+.list__keynote.list--col4 li:nth-child(1){margin-left:0 !important}
 .list__keynote .box__card--keynote{width:100%}
 .box__card--keynote .box__image{overflow:hidden;display:block;width:100%;padding-top:240px;border-radius:20px}
 .box__card--keynote .box__image img{width:100%;height:auto;min-height:100%;top:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}
@@ -486,6 +497,7 @@ a.box__card--speaker .box__info .text__session{padding-top:15px}
 .list__keynote.list--col3 li:nth-child(odd){margin-left:0 !important}
 .list__keynote.list--col3 li:nth-child(3n+1){margin-left:15px !important}
 .list__keynote.list--col3 li:first-child{margin-left:0 !important}
+.list__keynote.list--col4 li:nth-child(odd){margin-left:0 !important}
 .box__card--keynote .box__image{padding-top:60%;border-radius:3vw}
 .box__card--keynote .box__info{padding-left:2vw}
 .box__card--keynote .text__session{margin-top:3vw;font-size:3.5vw}
@@ -577,7 +589,7 @@ form .text-notice .text--required{display:inline-block;margin-left:4px}
 .box__files .button{position:absolute;top:0;right:0;font-weight:600;width:148px}
 .box__files input[type="file"]{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
 .box__files .upload-name{display:inline-block;width:380px;padding:.5em .75em;font-size:18px;color:#8f8f8f;vertical-align:middle;border:none;-webkit-appearance:none;-moz-appearance:none;appearance:none}
-.box__files .upload-name:disabled{background-color:transparent}
+.box__files .upload-name:disabled{background-color:transparent;color:#666}
 .box__files .text--required+.upload-name{margin-left:4px;padding-left:0}
 .box__files .button__delete{position:absolute;top:10px;right:160px;width:19px;height:19px;background:url(../images/common/ico_delete.png) no-repeat 0 0;background-size:100% auto}
 .form-group-file .text-notice{width:100%}
@@ -598,6 +610,7 @@ html:lang(en) .box_agreement .box__form-control p a{display:block;margin-left:0}
 @media (max-width:1419px){
 .registwrap{padding:60px 24px 80px}
 form .text-notice{padding-top:6px}
+.form-group > label{margin-bottom:2vw;font-size:1.75vw}
 .form-group-file .box__files-image img{width:8.538vh;height:8.538vh}
 .form-group-file .box__files{-webkit-flex:none;flex:none;height:4vw}
 .box__files .button{width:11vw}
@@ -623,12 +636,12 @@ input[type="checkbox"] + label > span,
 input[type=radio] + label > span{width:4.2vw;height:4.2vw;margin:0.2vw 0.4vw 0.4vw 0}
 input[type="checkbox"]:checked + label > span:after{left:1.3vw;top:0.6vw;width:1.2vw;height:2vw}
 input[type=radio]:checked + label > span:after{left:50%;top:50%;width:2vw;height:2vw;margin:-1vw 0 0 -1vw}
-.form-control{margin:6vw 0 2vw 0}
+.form-control{margin:7vw 0 2vw 0}
 .form-control > input,
 .form-control > select{height:7.6vw;font-size:3.5vw}
 .form-control > label{height:7.6vw;font-size:3.5vw}
 .form-control.js-focus > label,
-.form-control.js-active > label{top:-3.5vw}
+.form-control.js-active > label{top:-4.5vw}
 .form-group{overflow:hidden}
 .form-group > label{margin-bottom:4vw;font-size:3.5vw}
 .form-group-select:after{top:1.75vw}
@@ -1301,7 +1314,7 @@ form .text-notice .text--required{font-size:3vw}
 .box__finalize{margin-bottom:80px}
 .box__review-booth ~ .box__review-booth{margin-top:40px}
 .box__review-booth .text__title{margin-bottom:12px;font-size:18px;color:#8f8f8f}
-.box__review-booth .text__company{font-size:40px;font-weight:bold;font-family:'SamsungSharpSans', san-serif;margin-left:4px;position:relative;bottom:-4px}
+.box__review-booth .text__company{font-size:40px;font-weight:bold;font-family:'SamsungSharpSans', sans-serif;margin-left:4px;position:relative;bottom:-4px}
 .box__review-booth .box__logo{display:block;text-align:center;padding:10px 0 20px}
 .box__review-booth .image__logo{width:550px;max-width:70%}
 .box__review-booth .image__banner{width:690px;max-width:90%}
@@ -1327,6 +1340,11 @@ form .text-notice .text--required{font-size:3vw}
 	.box_setup .box__form-control .form-radio{margin-right:16px;margin-left:0}
 	.box_setup .box__form-control p{display:block;width:100%}
 	.box_setup .box__form-control:last-child{text-align:left}
+	.box__info--user{padding-left:80px}
+	.box__info--user .box__image{width:57px;padding-top:57px}
+	.box__info--user .box__info label{font-size:1.7vw}
+	.box__info--user .box__info .text__info{font-size:1.7vw}
+	.box__info--user .box__info li{margin-bottom:0}
 	.button__add{margin:3vw 0 1vw}
 	.button__add::before{margin-right:1vw;width:3vw;height:3vw}
 	.button__add span{font-size:2vw}
@@ -1365,9 +1383,10 @@ form .text-notice .text--required{font-size:3vw}
 	.section__portal .box__lnb-step .link__step em{display:inline-block;font-size:3.5vw;font-weight:bold;margin-right:3vw}
 	.section__portal .box__lnb-step .link__step span{display:inline-block;font-size:3.5vw}
 	.section__portal form{margin-top:6vw;margin-bottom:8vw}
+	.form-group + .box_setup{margin-top:-8vw}
 	.box_setup .box__form{padding:5.4vw 5vw 6vw 4vw}
-	.box_setup .box__form-control{overflow:hidden;clear:both;display:block;-webkit-display:block;margin-top:2vw}
-	.box_setup .box__form-control + .box__form-control{margin-top:3.5vw}
+	.box_setup .box__form-control{clear:both;display:block;-webkit-display:block;margin-top:2vw}
+	.box_setup .box__form-control + .box__form-control{padding-top:5.5vw}
 	.box_setup .box__form-control p{clear:both;font-size:3.5vw}
 	.box_setup .box__form-control .form-radio{margin-top:1.8vw;display:block}
 	.list__messages-qna .list-item{width:100%}
@@ -1377,6 +1396,8 @@ form .text-notice .text--required{font-size:3vw}
 	.list__messages-qna .box__card--messages .layer__setting{width:auto;margin-top:0;text-align:right}
 	.list__messages-qna .list-item--answer .box__card--messages .layer__setting{width:100%;text-align:center}
 	.list__messages-qna + .link__more{margin:24px auto 0}
+	.box__info--user .box__info label{font-size:3.5vw}
+	.box__info--user .box__info .text__info{font-size:3.5vw}
 	.button__add{margin:5vw 0 3vw}
 	.button__add::before{margin-right:2vw;width:5vw;height:5vw}
 	.button__add span{font-size:4vw}
@@ -1392,8 +1413,8 @@ form .text-notice .text--required{font-size:3vw}
 	.form__account{padding:0 0 3vw}
 	.list__chat-management li{padding-left:20px}
 	.list__chat-management li::before{left:0}
-	.list__chat-management .text__name{padding-left:12px;max-width:26vw;text-align:left}
-	.list__chat-management .text__time{display:block;margin-bottom:4px}
+	.list__chat-management .text__name{padding-left:12px;max-width:26vw;text-align:left;font-size:3.5vw}
+	.list__chat-management .text__time{display:block;margin-bottom:4px;font-size:3.5vw}
 	.list__chat-management .button{min-width:18vw}
 	.panel{border-radius:3vw;padding:6vw 4vw}
 	.panel + .panel{margin-top:4vw}
