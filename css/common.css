@@ -642,6 +642,7 @@ html:lang(en) .box_agreement .box__form-control p a{display:block;margin-left:0}
 @media (max-width:1419px){
 .registwrap{padding:60px 24px 80px}
 form .text-notice{padding-top:6px}
+.form-control > label{font-size:1.75vw;line-height:4vw}
 .form-group > label{margin-bottom:2vw;font-size:1.75vw}
 .form-group-file .box__files-image img{width:8.538vh;height:8.538vh}
 .form-group-file .box__files{-webkit-flex:none;flex:none;height:4vw}
@@ -1367,8 +1368,9 @@ form .text-notice .text--required{font-size:3vw}
 .list__video li .text__info{display:table-cell;vertical-align:middle;height:100%;font-size:18px;line-height:1.25em;color:#757575;background-color:transparent}
 .list__video li .text__info:hover{color:#222}
 .inline-form-group .form-checkbox--category{margin:0;width:150px;margin-bottom:20px;text-align:center}
-.inline-form-group .form-checkbox--category input[type="checkbox"]+label{padding-left:0;padding-bottom:35px}
+.inline-form-group .form-checkbox--category input[type="checkbox"]+label{padding-left:0;padding-bottom:56px}
 .inline-form-group .form-checkbox--category input[type="checkbox"]+label span{top:auto;bottom:0;left:50%;margin:0;margin-left:-10px;margin-right:0;}
+.inline-form-group .form-checkbox--category input[type="checkbox"]+label em{position:absolute;bottom:28px;left:0;width:100%;font-weight:500;text-align:center}
 .inline-form-group .form-checkbox--category input[type="checkbox"]+label::after{content:'';display:inline-block;border-radius:50vh;width:112px;height:0;padding-top:112px;background-image:url(../images/sprite__category.png);background-size:850px auto;background-repeat:no-repeat;background-position-y:-120px}
 .inline-form-group .form-checkbox--category input[type="checkbox"]:checked+label::after{background-position-y:0}
 .inline-form-group .form-checkbox--category:nth-child(1) input[type="checkbox"]+label::after{background-position-x:0}
@@ -1423,6 +1425,7 @@ form .text-notice .text--required{font-size:3vw}
 	.list__video li .icon img{width:5vw}
 	.list__video li .text__info{font-size:1.75vw}
 	.inline-form-group .form-checkbox--category{width:15%;margin:0 1%}
+	.inline-form-group .form-checkbox--category input[type="checkbox"]+label em{font-size:1.75vw}
 	.inline-form-group .form-checkbox--category input[type="checkbox"]+label::after{background-size:auto 200%;background-position-y:104%}
 	.inline-form-group .form-checkbox--category input[type="checkbox"]+label::after{width:100%;padding-top:100%}
 	.inline-form-group .form-checkbox--category:nth-child(2) input[type="checkbox"]+label::after{background-position-x:25%}
@@ -1498,7 +1501,9 @@ form .text-notice .text--required{font-size:3vw}
 	.list__video li .icon img{width:8vw}
 	.list__video li .text__info{font-size:3.5vw}
 	.inline-form-group .form-checkbox--category{margin:0 0 2vw 0;width:17.3%}
-	.inline-form-group .form-checkbox--category input[type="checkbox"]+label{padding-bottom:5vw}
+	.inline-form-group .form-checkbox--category input[type="checkbox"]+label{padding-bottom:9vw}
+	.inline-form-group .form-checkbox--category input[type="checkbox"]+label span{margin-left:-2.1vw}
+	.inline-form-group .form-checkbox--category input[type="checkbox"]+label em{font-size:2.75vw;bottom:5vw}
 }
 
 .box__switch-wrap{clear:both;margin-top:76px}
