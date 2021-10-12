@@ -1269,7 +1269,7 @@ form .text-notice .text--required{font-size:3vw}
 .section__portal .box__lnb-step .link__step.link__step--active{background-color:#006bea}
 .section__portal .box__lnb-step .link__step.link__step--active *{color:#fff}
 .section__portal .box__portal{width:100%;max-width:1000px;margin-right:40px}
-.section__portal-main .box__portal{margin-right:0}
+.section__portal-main .box__portal{max-width:100%;margin-right:0}
 .section__portal-main .box__portal .form__regist{margin-top:0}
 .section__portal .box__portal h3{padding-top:0;font-family:'Samsung Sharp Sans',sans-serif}
 .section__portal .box__chk{padding:30px 40px 0 40px}
