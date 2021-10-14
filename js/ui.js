@@ -136,3 +136,13 @@ $(function(){
     });
 
 });
+
+// Session View Type Toggle
+$(document).on('click', '.button__sort', function(){
+	$(this).addClass('button--active').siblings().removeClass('button--active');
+	if($(this).hasClass('button__sort--gallery')) {
+		$('.box__article--list').addClass('view--gallery').removeClass('view--list');
+	} else {
+		$('.box__article--list').addClass('view--list').removeClass('view--gallery');
+	}
+});

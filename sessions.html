@@ -1,0 +1,355 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>SAFE Forum 2021</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="css/common.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="wraparea">
+		<h1 class="logo"><a href="main.html"><strong>SAFE Forum</strong> 2021</a></h1>
+		<nav class="box__nav--header">
+			<div class="box__inner">
+				<ul>
+					<li><a href="keynote.html">Keynote</a></li>
+					<li><a href="sessions.html">Partner Session</a></li>
+					<li><a href="pavilion.html">Partner Pavilion</a></li>
+					<li><a href="networking.html">Networking</a></li>
+					<li><a href="registration.html">Registration</a></li>
+				</ul>
+				<button type="button" class="button__close"><span class="for-a11y">Close</span></button>
+			</div>
+		</nav>
+		<div class="box__link">
+			<a href="mypage.html" class="link__my"><span class="for-a11y">Mypage</span></a>
+			<button type="button" class="button__gnb"><span class="for-a11y">Gnb open</span></button>
+		</div>
+    </div>
+</header>
+
+<div class="container">
+	<div class="wraparea">
+		<article class="box__article--session">
+			<h2>Partner Session</h2>
+            <p class="text__info">In this part, Samsung Foundry's techonological innovations, <br>
+                operational capability and total solution will be covered. <br>
+                If you have any questions of requests, please leave a message<br>
+                on the board positioned at the lower part of each sessions.
+            </p>
+		</article>
+        
+		<article class="box__article box__article--filters">
+            <div class="box__search-field">
+                <input type="text" class="form-control" placeholder="AI, 2.5D etc.">
+                <button type="submit" class="button button--dark button__search">Search</button>
+            </div>
+			<div class="box__filter">
+				<p class="text__title">Field of Interest</p>
+				<div class="box__form-control">
+					<div class="form-checkbox">
+						<input id="Interest1_1" type="checkbox" name="Interest1">
+						<label for="Interest1_1"><span></span>EDA</label>
+					</div>
+					<div class="form-checkbox">
+						<input id="Interest1_2" type="checkbox" name="Interest1" checked>
+						<label for="Interest1_2"><span></span>Cloud</label>
+					</div>
+					<div class="form-checkbox">
+						<input id="Interest1_3" type="checkbox" name="Interest1">
+						<label for="Interest1_3"><span></span>Package</label>
+					</div>
+					<div class="form-checkbox">
+						<input id="Interest1_4" type="checkbox" name="Interest1" checked>
+						<label for="Interest1_4"><span></span>DSP</label>
+					</div>
+					<div class="form-checkbox">
+						<input id="Interest1_5" type="checkbox" name="Interest1">
+						<label for="Interest1_5"><span></span>IP</label>
+					</div>
+				</div>
+			</div>
+		</article>
+
+		<article class="box__article box__article--sorts">
+			<a href="#" onclick="FuncLayer.open('#layer__agenda',event)" aria-haspopup="dialog" class="button button--blue link__agenda">Agenda List</a>
+			<button type="button" class="button__sort button__sort--gallery button--active"><span class="for-a11y">Gallery View</span></button><!-- 활성 class : button--active -->
+			<button type="button" class="button__sort button__sort--list"><span class="for-a11y">List View</span></button>
+		</article>
+
+		<!-- to.Dev : Agendar 팝업 -->
+		<div class="box__layer layer__agenda" id="layer__agenda" role="dialog">
+			<div class="box__layer-inner">
+				<div class="box__layer-header">
+					<h2>DSP/PKG/EDA/Cloud Agenda</h2>
+				</div>
+				<div class="box__layer-content">
+					<div class="image__agenda"><img src="images/dummy/sessions_agenda.gif" alt=""></div>
+				</div>
+				<div class="box__layer-footer">
+					<button class="button__closed" onclick="FuncLayer.closed()">닫기</button>
+				</div>
+			</div>
+		</div>
+		<!-- // to.Dev : Live streaming 팝업 -->
+
+		<article class="box__article box__article--list view--gallery">
+			<!-- 
+				갤러리뷰 : view--gallery
+				리스트뷰 : view--list
+			-->
+			<ul class="list__keynote list--col4">
+				<li>
+					<div class="box__card--keynote fade-in agenda--color1">
+						<!-- agenda--color1, agenda--color2, agenda--color3 -->
+						<span class="box__image"><img src="images/dummy/image__session01.jpg" alt="@@session"></span>
+						<div class="box__info">
+							<span class="text__session">Welcome Remark</span>
+							<span class="text__name">Gitae Jeong</span>
+							<span class="text__position">Head</span>
+							<span class="text__affiliation">Samsung Electronics USA, Samsung Foundry</span>
+							<button type="button" class="button__favorites button__favorites--active"><span class="for-a11y">Favorites</span></button>
+						</div>
+						<div class="box__detail">
+							<p class="text__title">Abstract</p>
+							<div class="text__info">				
+							Abstract submission does not constitute registration and presenters 
+							are required to register in the conference separately. Please carefully 
+							read the guidelines before submitting your abstract. <br><br>
+							As we host SFF 2021 as a Virtual and Onsite Conference, the Oral 
+							Presentations & Poster Session will be presented on the Virtual 
+							Platform. We expect more international authors to submit and share 
+							their research without concern for travel restrictions. Details about 
+							presentation formats will be updated soon on the ‘Presentation 
+							Guidelines Page.’</div>
+						</div>
+						<a href="session_view.html" class="button link__more">Learn more</a>
+						<span class="text__views">View: 341</span>
+					</div>
+				</li>
+				<li>
+					<div class="box__card--keynote fade-in agenda--color1">
+						<span class="box__image"><img src="images/dummy/image__session02.jpg" alt="@@session"></span>
+						<div class="box__info">
+							<span class="text__watched">Watched</span>
+							<span class="text__session">Specialty Updates (RF,eMRAM) Specialty Updates (RF,eMRAM)</span>
+							<span class="text__name">YK Hong</span>
+							<span class="text__position">Team Leader</span>
+							<span class="text__affiliation">Samsung Electronics America Inc.</span>
+							<button type="button" class="button__favorites"><span class="for-a11y">Favorites</span></button>
+						</div>
+						<div class="box__detail">
+							<p class="text__title">Abstract</p>
+							<div class="text__info">				
+							Abstract submission does not constitute registration and presenters 
+							are required to register in the conference separately. Please carefully 
+							read the guidelines before submitting your abstract.</div>
+						</div>
+						<a href="session_view.html" class="button link__more">Learn more</a>
+						<span class="text__views">View: 268</span>
+					</div>
+				</li>
+				<li>
+					<div class="box__card--keynote fade-in agenda--color2">
+						<span class="box__image"><img src="images/dummy/image__session03.jpg" alt="@@session"></span>
+						<div class="box__info">
+							<span class="text__session">Welcome Remark</span>
+							<span class="text__name">Gitae Jeong</span>
+							<span class="text__position">Team Leader</span>
+							<span class="text__affiliation">Samsung Electronics America Inc.</span>
+							<button type="button" class="button__favorites"><span class="for-a11y">Favorites</span></button>
+						</div>
+						<div class="box__detail">
+							<p class="text__title">Abstract</p>
+							<div class="text__info">				
+							Abstract submission.</div>
+						</div>
+						<a href="session_view.html" class="button link__more">Learn more</a>
+						<span class="text__views">View: 105</span>
+					</div>
+				</li>
+				<li>
+					<div class="box__card--keynote fade-in agenda--color3">
+						<span class="box__image"><img src="images/dummy/image__session04.jpg" alt="@@session"></span>
+						<div class="box__info">
+							<span class="text__session">Specialty Updates (RF,eMRAM)</span>
+							<span class="text__name">YK Hong</span>
+							<span class="text__position">Team Leader</span>
+							<span class="text__affiliation">Samsung Electronics America Inc.</span>
+							<button type="button" class="button__favorites button__favorites--active"><span class="for-a11y">Favorites</span></button>
+						</div>
+						<div class="box__detail">
+							<p class="text__title">Abstract</p>
+							<div class="text__info">				
+							Abstract submission does not constitute registration and presenters 
+							are required to register in the conference separately. Please carefully 
+							read the guidelines before submitting your abstract. <br><br>
+							As we host SFF 2021 as a Virtual and Onsite Conference, the Oral 
+							Presentations & Poster Session will be presented on the Virtual 
+							Platform. We expect more international authors to submit and share 
+							their research without concern for travel restrictions. Details about 
+							presentation formats will be updated soon on the ‘Presentation 
+							Guidelines Page.’</div>
+						</div>
+						<a href="session_view.html" class="button link__more">Learn more</a>
+						<span class="text__views">View: 341</span>
+					</div>
+				</li>
+				<li>
+					<div class="box__card--keynote fade-in agenda--color3">
+						<span class="box__image"><img src="images/dummy/image__session01.jpg" alt="@@session"></span>
+						<div class="box__info">
+							<span class="text__watched">Watched</span>
+							<span class="text__session">Welcome Remark</span>
+							<span class="text__name">Gitae Jeong</span>
+							<span class="text__position">Team Leader</span>
+							<span class="text__affiliation">Samsung Electronics America Inc. </span>
+							<button type="button" class="button__favorites button__favorites--active"><span class="for-a11y">Favorites</span></button>
+						</div>
+						<a href="session_view.html" class="button link__more">Learn more</a>
+						<span class="text__views">View: 684</span>
+					</div>
+				</li>
+				<li>
+					<div class="box__card--keynote fade-in agenda--color1">
+						<span class="box__image"><img src="images/dummy/image__session02.jpg" alt="@@session"></span>
+						<div class="box__info">
+							<span class="text__session">Specialty Updates (RF,eMRAM) Specialty Updates (RF,eMRAM)</span>
+							<span class="text__name">YK Hong</span>
+							<span class="text__position">Team Leader</span>
+							<span class="text__affiliation">Samsung Electronics America Inc.</span>
+							<button type="button" class="button__favorites"><span class="for-a11y">Favorites</span></button>
+						</div>
+						<a href="session_view.html" class="button link__more">Learn more</a>
+						<span class="text__views">View: 341</span>
+					</div>
+				</li>
+				<li>
+					<div class="box__card--keynote fade-in agenda--color2">
+						<span class="box__image"><img src="images/dummy/image__session03.jpg" alt="@@session"></span>
+						<div class="box__info">
+							<span class="text__session">Welcome Remark</span>
+							<span class="text__name">Gitae Jeong</span>
+							<span class="text__position">Team Leader</span>
+							<span class="text__affiliation">Samsung Electronics America Inc.</span>
+							<button type="button" class="button__favorites"><span class="for-a11y">Favorites</span></button>
+						</div>
+						<a href="session_view.html" class="button link__more">Learn more</a>
+						<span class="text__views">View: 341</span>
+					</div>
+				</li>
+				<li>
+					<div class="box__card--keynote fade-in agenda--color3">
+						<span class="box__image"><img src="images/dummy/image__session04.jpg" alt="@@session"></span>
+						<div class="box__info">
+							<span class="text__session">Specialty Updates (RF,eMRAM)</span>
+							<span class="text__name">YK Hong</span>
+							<span class="text__position">Team Leader</span>
+							<span class="text__affiliation">Samsung Electronics America Inc.</span>
+							<button type="button" class="button__favorites button__favorites--active"><span class="for-a11y">Favorites</span></button>
+						</div>
+						<a href="session_view.html" class="button link__more">Learn more</a>
+						<span class="text__views">View: 341</span>
+					</div>
+				</li>
+				<li>
+					<div class="box__card--keynote fade-in agenda--color1">
+						<span class="box__image"><img src="images/dummy/image__session01.jpg" alt="@@session"></span>
+						<div class="box__info">
+							<span class="text__session">Welcome Remark</span>
+							<span class="text__name">Gitae Jeong</span>
+							<span class="text__position">Team Leader</span>
+							<span class="text__affiliation">Samsung Electronics America Inc. </span>
+							<button type="button" class="button__favorites button__favorites--active"><span class="for-a11y">Favorites</span></button>
+						</div>
+						<a href="session_view.html" class="button link__more">Learn more</a>
+						<span class="text__views">View: 341</span>
+					</div>
+				</li>
+				<li>
+					<div class="box__card--keynote fade-in agenda--color1">
+						<span class="box__image"><img src="images/dummy/image__session02.jpg" alt="@@session"></span>
+						<div class="box__info">
+							<span class="text__watched">Watched</span>
+							<span class="text__session">Specialty Updates (RF,eMRAM) Specialty Updates (RF,eMRAM)</span>
+							<span class="text__name">YK Hong</span>
+							<span class="text__position">Team Leader</span>
+							<span class="text__affiliation">Samsung Electronics America Inc.</span>
+							<button type="button" class="button__favorites"><span class="for-a11y">Favorites</span></button>
+						</div>
+						<a href="session_view.html" class="button link__more">Learn more</a>
+						<span class="text__views">View: 341</span>
+					</div>
+				</li>
+				<li>
+					<div class="box__card--keynote fade-in agenda--color1">
+						<span class="box__image"><img src="images/dummy/image__session03.jpg" alt="@@session"></span>
+						<div class="box__info">
+							<span class="text__session">Welcome Remark</span>
+							<span class="text__name">Gitae Jeong</span>
+							<span class="text__position">Team Leader</span>
+							<span class="text__affiliation">Samsung Electronics America Inc.</span>
+							<button type="button" class="button__favorites"><span class="for-a11y">Favorites</span></button>
+						</div>
+						<a href="session_view.html" class="button link__more">Learn more</a>
+						<span class="text__views">View: 341</span>
+					</div>
+				</li>
+				<li>
+					<div class="box__card--keynote fade-in agenda--color3">
+						<span class="box__image"><img src="images/dummy/image__session04.jpg" alt="@@session"></span>
+						<div class="box__info">
+							<span class="text__session">Specialty Updates (RF,eMRAM)</span>
+							<span class="text__name">YK Hong</span>
+							<span class="text__position">Team Leader</span>
+							<span class="text__affiliation">Samsung Electronics America Inc.</span>
+							<button type="button" class="button__favorites button__favorites--active"><span class="for-a11y">Favorites</span></button>
+						</div>
+						<a href="session_view.html" class="button link__more">Learn more</a>
+						<span class="text__views">View: 341</span>
+					</div>
+				</li>
+			</ul>
+			<div class="box__pagination">
+				<a href="#" class="prev">&lt;&lt;</a>
+				<a href="#" class="prev">&lt;</a>
+				<a href="#">1</a>
+				<a href="#" class="current">2</a><!-- 현재 페이지 : current -->
+				<a href="#">3</a>
+				<a href="#">4</a>
+				<a href="#" class="next">&gt;</a>
+				<a href="#" class="next">&gt;&gt;</a>
+			</div>
+		</article>
+
+		<article class="box__article box__article--landing">
+			<div class="wraparea">
+				<a href="#" class="link__banner">
+					<img src="images/banner_badges.jpg" alt="Collect Badges and Win a Prize">
+				</a>
+			</div>
+		</article>
+	</div>
+</div>
+
+<button type="button" class="button__gotop"><span class="for-a11y">Top</span></button>
+
+<footer class="footer">
+    <div class="wraparea">
+		<ul class="list__link">
+			<li><a href="terms.html">Terms</a></li>
+			<li><a href="privacy.html">Privacy</a></li>
+			<li><a href="contac.html">Contact</a></li>
+		</ul>
+		<p class="text__copyright">Copyrightⓒ SAFE Forum 2021. ALL rights reserved.</p>
+    </div>
+</footer>
+
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/ui.js"></script>
+</body>
+</html>
