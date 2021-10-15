@@ -484,7 +484,7 @@ a.box__card--speaker .box__info .text__session{padding-top:15px}
 .box__article--filters .box__filter .box__form-control .form-checkbox{display:inline-block;margin-right:100px;vertical-align:top}
 .box__article--filters .box__filter .box__form-control input[type="checkbox"] + label > span{background-color:#fff}
 .box__article--filters .box__filter .box__form-control input[type="checkbox"]:checked + label > span{background-color:#3e91ff;border-color:#3e91ff}
-.box__article--sorts{padding-top:64px;text-align:right;font-size:0}
+.box__article--sorts{padding-top:40px;text-align:right;font-size:0}
 .box__article--sorts .button,
 .box__article--sorts .button__sort{vertical-align:top}
 .box__article--sorts .button__sort:hover{opacity:0.9}
@@ -1074,6 +1074,9 @@ form .text-notice .text--required{font-size:3vw}
 .box__session-info .box__card--user .button__chat{position:absolute;top:20px;right:0}
 .box__session-info .box__company_logo{margin:40px 0;text-align:center}
 .box__session-info .box__company_logo img{width:auto;max-width:90%;max-height:120px}
+.box__session-info .box__booth-logo{display:inline-block;vertical-align:middle;position:relative;width:150px;height:108px;border:1px solid #ddd;border-radius:15px;overflow:hidden}
+.box__session-info .box__booth-logo img{position:absolute;top:50%;left:0;-webkit-transform:translateY(-50%);transform:translateY(-50%)}
+.box__session-info .text__company{display:inline-block;vertical-align:middle;margin-left:20px}
 .button__networking{display:inline-block;width:26px;height:26px;background:url(../images/common/ico_more-plus.png) no-repeat 0 0;background-size:100% auto;-webkit-font-smoothing: subpixel-antialiased;transition:transform 0.4s}
 .button__networking:hover{-webkit-transform:rotate(90deg);transform:rotate(90deg)}
 .button__networking:hover+.text__networking{display:inline-block}
@@ -1160,7 +1163,7 @@ form .text-notice .text--required{font-size:3vw}
 .box__search-field{position:relative;display:flex;display:-webkit-flex;align-items:baseline}
 .box__search-field .form-control{-webkit-flex:1;flex:1;display:block;width:100%;height:38px;margin-top:10px;padding:0 20px;border:1px solid #444;background-color:#fff;border-radius:50vh;-webkit-box-sizing:border-box;box-sizing: border-box}
 .box__search-field .form-control:focus{outline:none}
-.box__search-field .button__search{-webkit-flex:none;flex:none;margin-left:10px}
+.box__search-field .button__search{-webkit-flex:none;flex:none;margin-left:10px;text-transform;:uppercase}
 .box__search-field .form-group-select{-webkit-flex:none;flex:none;width:200px;margin-right:10px}
 .box__search-field .form-group-select select{border:none;color:#8f8f8f;font-size:16px}
 .box__search-field .form-group-select:after{right:12px;top:15px}
@@ -1681,3 +1684,86 @@ form .text-notice .text--required{font-size:3vw}
 .layer__agenda .box__layer-inner .button__closed{width:10vw;height:10vw;background:url(../images/common/ico_close3.png) no-repeat 0 0;background-size:100% auto}
 .layer__agenda .image__agenda{padding:3.5vw}
 }
+
+/* Partner Pavilion */
+.list__booth{margin-right:-38px}
+.list__booth:after{content:'';clear:both;display:block}
+.list__booth > li{float:left;width:-webkit-calc(50% - 38px);width:calc(50% - 38px);margin-top:40px;margin-bottom:100px}
+.list__booth > li:nth-child(even){margin-left:38px}
+.list__booth > li:nth-child(odd){margin-left:0 !important}
+.list__booth .box__card--booth{width:100%}
+.box__card--booth .box__image{overflow:hidden;display:block;width:100%;padding-top:225px}
+.box__card--booth .box__image img{width:100%;height:auto;min-height:100%;top:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}
+.box__card--booth .box__image:hover img{-webkit-transform:scale(1.05) translateX(-47.5%) translateY(-47.5%);transform:scale(1.05) translateX(-47.5%) translateY(-47.5%)}
+.box__card--booth .box__info{padding-top:30px}
+.box__card--booth .text__company{margin-bottom:6px;display:inline-block;font-family:'SamsungSharpSans', sans-serif;font-size:26px;font-weight:bold;color:#000}
+.box__card--booth .text__info{font-size:18px;line-height:1.5em;color:#757575}
+.box__card--booth .button__favorites{background-color:transparent}
+.box__card--booth .button__favorites span{display:inline-block;font-family:'Samsung Sharp Sans';font-size:18px;font-weight:500;vertical-align:top}
+.box__card--booth .button__favorites::after{content:'';position:relative;top:0;display:inline-block;width:25px;height:25px;background:url(../images/common/ico__favorite.png) no-repeat 0 0;background-size:100% auto;vertical-align:top}
+.box__card--booth .button__favorites.button__favorites--active::after{background-position:0 -25px}
+.box__card--booth .box__info .button__favorites{display:inline-block;vertical-align:top;position:relative;top:4px;margin-left:10px}
+.box__card--booth .list__contact{padding-top:20px;margin-bottom:30px}
+.box__card--booth .list__contact li{position:relative;padding:10px 4px 7px 33px;border-bottom:1px solid #dfdde0}
+.box__card--booth .list__contact li::before{content:'';position:absolute;top:50%;left:16px;width:0;height:0;margin-top:-6px;border-style: solid;border-width: 6px 0 6px 6px;border-color: transparent transparent transparent #0069ea}
+.box__card--booth .list__contact .text__title{font-size:16px;color:#006bea}
+.box__card--booth .list__contact .text__desc{font-size:16px;color:#757575}
+.box__card--booth .list__contact .text__desc a{color:#757575}
+.box__card--booth .list__contact .text__desc a:hover{color:#000}
+.box__card--booth .link__more{display:block;width:240px;min-width:240px;margin:0 auto}
+.view--list .list__booth{margin-right:0}
+.view--list .list__booth li{width:100%;float:none;clear:both;padding:0 144px 24px 48px;margin:35px 0 28px 0;border-bottom:1px solid #bbb;-webkit-box-sizing:border-box;box-sizing:border-box}
+.view--list .box__card--booth{display:table;width:100%}
+.view--list .box__card--booth .box__booth-logo{display:table-cell;width:180px;vertical-align:middle;text-align:center}
+.view--list .box__card--booth .box__image{width:166px;padding-top:81px;border:1px solid #ddd}
+.view--list .box__card--booth .box__info{display:table;width:100%;height:80px;padding-top:0}
+.view--list .box__card--booth .button__favorites{position:absolute;top:50%;left:-40px;margin-left:0;-webkit-transform:translateY(-50%);transform:translateY(-50%)}
+.view--list .box__card--booth .text__company{display:table-cell;width:30%;padding-left:24px;margin-bottom:0;vertical-align:middle}
+.view--list .box__card--booth .text__info{display:table-cell;vertical-align:middle}
+.view--list .box__card--booth .list__contact{display:none}
+.view--list .box__card--booth .link__more{font-size:0;position:absolute;top:0;left:0;width:100%;height:100%;margin:0;border:none;background-color:transparent}
+.view--gallery .box__card--booth .box__booth-logo{display:none}
+.view--list .box__card--booth .box__booth-banner{display:none}
+@media (max-width:1419px){
+	.list__booth{margin-right:-20px}
+	.list__booth > li{width:-webkit-calc(50% - 20px);width:calc(50% - 20px);margin-top:4vw;margin-bottom:3vw}
+	.list__booth > li:nth-child(even){margin-left:20px}
+	.box__card--booth .box__image{padding-top:16vw}
+	.box__card--booth .box__info{padding-top:3vw}
+	.box__card--booth .text__company{font-size:3vw}
+	.box__card--booth .text__info{font-size:1.75vw}
+	.box__card--booth .list__contact .text__title{font-size:1.6vw}
+	.box__card--booth .list__contact .text__desc{font-size:1.6vw}
+	.box__card--booth .list__contact li{padding:4px 2px 5px 20px}
+	.box__card--booth .list__contact li::before{left:7px;margin-top:-5px;border-width:4px 0 4px 4px}
+	.box__card--booth .button__favorites::after{width:2.4vw;height:2.4vw}
+	.box__card--booth .button__favorites.button__favorites--active::after{background-position-y:-2.4vw}
+	.view--list .list__booth > li:nth-child(even){margin-left:0}
+	.view--list .list__booth li{padding-right:2vw}
+	.view--list .box__card--booth .text__company{padding-left:1vw;font-size:2vw}
+}
+@media (max-width:768px){
+	.list__booth{margin-right:0}
+	.list__booth > li{float:none;width:100%;margin-top:6vw;margin-bottom:10vw}
+	.list__booth > li:nth-child(even){margin-left:0}
+	.list__booth > li:nth-child(odd){margin-left:0}
+	.box__card--booth .box__image{padding-top:40%}
+	.box__card--booth .box__info{padding-top:3vw}
+	.box__card--booth .text__company{font-size:4vw}
+	.box__card--booth .text__info{font-size:3.5vw}
+	.box__card--booth .list__contact{padding-top:3.5vw;margin-bottom:5.5vw}
+	.box__card--booth .list__contact .text__title{font-size:3vw}
+	.box__card--booth .list__contact .text__desc{font-size:3vw}
+	.box__card--booth .list__contact li{padding:4px 2px 3px 20px}
+	.box__card--booth .list__contact li::before{left:7px;margin-top:-3px;border-width:4px 0 4px 4px}
+	.box__card--booth .button__favorites::after{width:5vw;height:5vw}
+	.box__card--booth .button__favorites.button__favorites--active::after{background-position-y:-5vw}
+	.view--list .list__booth li{margin:5vw 0 6vw 0}
+	.view--list .box__card--booth .box__info{display:block;height:auto}
+	.view--list .box__card--booth .box__booth-logo{display:block;width:26vw}
+	.view--list .box__card--booth .box__booth-logo .box__image{width:25vw;padding-top:11vw}
+	.view--list .box__card--booth .text__company{display:block;margin-top:3vw;font-size:4vw;padding-left:0}
+	.view--list .box__card--booth .text__info{display:block;margin-top:1vw;font-size:3.5vw}
+	.view--list .box__card--booth .link__more{display: none;}
+}
+	
