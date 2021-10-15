@@ -625,12 +625,13 @@ a.box__card--speaker .box__info .text__session{padding-top:15px}
 .box__article--list .box__card--keynote .button__favorites::after{width:5vw;height:5vw;margin-left:2vw}
 .box__article--list .box__card--keynote .button__favorites.button__favorites--active::after{background-position-y:-5vw}
 .box__article--list .box__card--keynote .box__detail{display:none !important}
-.box__article--list .box__card--keynote .text__watched{bottom:-10.5vw;left:25vw;font-size:1vw}
+.box__article--list .box__card--keynote .text__watched{bottom:-10.5vw;left:25vw;font-size:3vw}
 .box__article--list.view--list .list__keynote.list--col4 li{padding-bottom:4vw;margin-bottom:6vw;margin-top:6vw !important}
 .box__article--list.view--list .list__keynote .box__card--keynote .box__info{padding-left:9vw;padding-right:13vw}
 .box__article--list.view--list .list__keynote .box__card--keynote .button__favorites::after{margin-left:0}
 .box__article--list.view--list .list__keynote .box__card--keynote .link__more{left:9vw;right:14vw}
 .box__article--list.view--list .list__keynote .box__card--keynote .text__watched{margin-left:0;margin-top:0;display:block}
+.box__article--list.view--list .list__keynote .box__card--keynote .text__views{font-size:3vw}
 }
 
 /* Registration */
