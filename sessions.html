@@ -36,10 +36,8 @@
 	<div class="wraparea">
 		<article class="box__article--session">
 			<h2>Partner Session</h2>
-            <p class="text__info">In this part, Samsung Foundry's techonological innovations, <br>
-                operational capability and total solution will be covered. <br>
-                If you have any questions of requests, please leave a message<br>
-                on the board positioned at the lower part of each sessions.
+            <p class="text__info">
+				In this Partner Session, featured presentations will be delivered by Samsung’s ecosystem partners, focusing on Platform 2.0: Innovation, Intelligence, Integration, and applications including IP, EDA , Cloud, Design Service and Package. Hear directly from the partners on their own design support solutions proven by Samsung.
             </p>
 		</article>
         
@@ -48,28 +46,70 @@
                 <input type="text" class="form-control" placeholder="AI, 2.5D etc.">
                 <button type="submit" class="button button--dark button__search">Search</button>
             </div>
-			<div class="box__filter">
-				<p class="text__title">Field of Interest</p>
-				<div class="box__form-control">
+			<div class="box__filter box__filter-category1 js-show"><!-- 활성 필터 : class=js-show 추가 -->
+				<p class="text__title"><span>Session<br>Category</span><em>01</em></p>
+				<div class="box__category1">
+					<div class="form-category">
+						<input id="category1_1" type="checkbox" name="category1">
+						<label for="category1_1"><span>IP</span></label>
+					</div>
+					<div class="form-category">
+						<input id="category1_2" type="checkbox" name="category1">
+						<label for="category1_2"><span>EDA</span></label>
+					</div>
+					<div class="form-category">
+						<input id="category1_3" type="checkbox" name="category1">
+						<label for="category1_3"><span>Cloud</span></label>
+					</div>
+					<div class="form-category">
+						<input id="category1_4" type="checkbox" name="category1">
+						<label for="category1_4"><span>Design<br>Service</span></label>
+					</div>
+					<div class="form-category">
+						<input id="category1_5" type="checkbox" name="category1">
+						<label for="category1_5"><span>Package</span></label>
+					</div>
+				</div>
+			</div>
+			<div class="box__filter box__filter-category2">
+				<p class="text__title"><span>Session<br>Category</span><em>02</em></p>
+				<div class="box__category2">
+					<div class="form-category">
+						<input id="Interest2_1" type="checkbox" name="Interest2">
+						<label for="Interest2_1"><span></span>HPC/AI</label>
+					</div>
+					<div class="form-category">
+						<input id="Interest2_2" type="checkbox" name="Interest2">
+						<label for="Interest2_2"><span></span>Mobile/Consumer/5G</label>
+					</div>
+					<div class="form-category">
+						<input id="Interest2_3" type="checkbox" name="Interest2">
+						<label for="Interest2_3"><span></span>IoT/Auto</label>
+					</div>
+				</div>
+			</div>
+			<div class="box__filter box__filter-category3">
+				<p class="text__title"><span>Session<br>Category</span><em>03</em></p>
+				<div class="box__category3">
 					<div class="form-checkbox">
-						<input id="Interest1_1" type="checkbox" name="Interest1">
-						<label for="Interest1_1"><span></span>EDA</label>
+						<input id="Interest3_1" type="checkbox" name="Interest3">
+						<label for="Interest3_1"><span></span>Foundation</label>
 					</div>
 					<div class="form-checkbox">
-						<input id="Interest1_2" type="checkbox" name="Interest1" checked>
-						<label for="Interest1_2"><span></span>Cloud</label>
+						<input id="Interest3_2" type="checkbox" name="Interest3">
+						<label for="Interest3_2"><span></span>Memory Interface</label>
 					</div>
 					<div class="form-checkbox">
-						<input id="Interest1_3" type="checkbox" name="Interest1">
-						<label for="Interest1_3"><span></span>Package</label>
+						<input id="Interest3_3" type="checkbox" name="Interest3">
+						<label for="Interest3_3"><span></span>SerDes</label>
 					</div>
 					<div class="form-checkbox">
-						<input id="Interest1_4" type="checkbox" name="Interest1" checked>
-						<label for="Interest1_4"><span></span>DSP</label>
+						<input id="Interest3_4" type="checkbox" name="Interest3">
+						<label for="Interest3_4"><span></span>Analog</label>
 					</div>
 					<div class="form-checkbox">
-						<input id="Interest1_5" type="checkbox" name="Interest1">
-						<label for="Interest1_5"><span></span>IP</label>
+						<input id="Interest3_5" type="checkbox" name="Interest3">
+						<label for="Interest3_5"><span></span>System</label>
 					</div>
 				</div>
 			</div>
@@ -327,5 +367,15 @@
 
 <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
 <script type="text/javascript" src="js/ui.js"></script>
+<script>
+$(function(){
+	$('.box__filter-category1').find('.form-category input').on('change',function(){
+		$('.box__filter-category2').addClass('js-show');
+	})
+	$('.box__filter-category2').find('.form-category input').on('change',function(){
+		$('.box__filter-category3').addClass('js-show');
+	})
+})
+</script>
 </body>
 </html>
