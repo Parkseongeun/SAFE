@@ -1331,6 +1331,10 @@ form .text-notice .text--required{font-size:3vw}
 .box__layer--cache .box__layer-content .text{font-size:16px;line-height:1.4}
 .box__layer--cache .box__layer-content .text span{display:inline-block;margin-right:10px}
 .box__layer--cache .box__layer-content .button{margin-top:10px}
+.box__layer--cache .box_agreement .box__form{border:none;padding:5px 25px 15px}
+.box__layer--cache .box_agreement .box__form-control p a{margin-left:0}
+.box__layer--cache .box_agreement .box__form-control .form-checkbox{margin-top:10px}
+.box__layer--cache .button__write{display:block;margin:0 auto}
 @media (max-width:1419px){
 .box__layer--cache .button__closed{top:13px;right:13px;width:24px;height:24px}
 }
@@ -1338,6 +1342,8 @@ form .text-notice .text--required{font-size:3vw}
 .box__layer--cache .box__layer-inner{padding:4vw 9vw 4vw 5vw}
 .box__layer--cache .button__closed{width:4vw;height:4vw}
 .box__layer--cache .box__layer-content .text{font-size:3vw;line-height:1.4}
+.box__layer--cache .box__layer-content .box_agreement .box__form{padding:4vw 3vw 6vw}
+.box__layer--cache .box__layer-content .box_agreement .box__form-control .form-checkbox{margin-top:-3vw}
 }
 
 .box__spinner{position:fixed;z-index:1000;top:0;left:0;right:0;bottom:0;background-color:rgba(255,255,255,0.4)}
