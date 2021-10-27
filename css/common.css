@@ -2,7 +2,7 @@
 @import url(fonts.css);
 html,body{height:100%}
 body{-webkit-text-size-adjust: 100%}
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,p,table,th,td,form,fieldset,legend,textarea,input,select,textarea,button{margin:0;padding:0;font-family:'SamsungOne',Roboto,'맑은 고딕','Malgun Gothic',sans-serif;font-size:16px;line-height:1.52;color:#000;letter-spacing:-0.3px}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,p,table,th,td,form,fieldset,legend,textarea,input,select,textarea,button{margin:0;padding:0;font-family:'SamsungOne',Roboto,sans-serif;font-size:16px;line-height:1.52;color:#000;letter-spacing:-0.3px}
 img,fieldset,iframe{border:0 none}
 li{list-style:none}
 input,select,button{vertical-align:middle}
@@ -30,7 +30,7 @@ img{max-width:100%}
 /* common */
 .font-sharpsans{font-family:'SamsungSharpSans', sans-serif}
 .font-light{font-weight:300}
-.button{display:inline-block;-webkit-box-sizing:border-box;box-sizing:border-box;min-width:140px;height:38px;padding:0 24px;border-radius:50vh;font-family:'SamsungOne','맑은 고딕','Malgun Gothic';font-size:14px;font-weight:500;line-height:38px;color:#000;letter-spacing:0;background-color:#fff;border:1px solid #444;transition:background-color 0.4s;text-align:center;cursor:pointer}
+.button{display:inline-block;-webkit-box-sizing:border-box;box-sizing:border-box;min-width:140px;height:38px;padding:0 24px;border-radius:50vh;font-family:'SamsungOne',Roboto,sans-serif;font-size:14px;font-weight:500;line-height:38px;color:#000;letter-spacing:0;background-color:#fff;border:1px solid #444;transition:background-color 0.4s;text-align:center;cursor:pointer}
 .button.active,
 .button:hover,
 .button:focus{border-color:#555;color:#fff;background-color:#000}
@@ -276,7 +276,7 @@ h3 + .text__info{font-size:3.5vw}
 .box__article--schedule h2 + .text__info{margin-top:-21px;margin-bottom:58px}
 .list__schedule{margin:0 120px;text-align:center;font-size:0}
 .list__schedule::after{content:'';display:block;clear:both}
-.list__schedule .list-item{position:relative;display:inline-block;width:25%;padding:0 18px;-webkit-box-sizing:border-box;box-sizing:border-box}
+.list__schedule .list-item{position:relative;display:inline-block;width:25%;padding:0 18px;margin:0 2%;-webkit-box-sizing:border-box;box-sizing:border-box}
 .list__schedule .box__zone{position:relative;display:-webkit-flex;display:flex;width:100%;height:0;padding-top:100%;-webkit-transition:-webkit-transform 0.4s;transition:transform 0.4s}
 .list__schedule .box__zone:hover{-webkit-transform:scale(1.015);transform:scale(1.015)}
 .list__schedule .box__zone .box__inner{position:absolute;top:0;left:0;right:0;bottom:0;display:-webkit-flex;display:flex;flex-direction:column;justify-content:center;align-items:center;background-color:#fff;border-radius:50vh;border:5px solid #ececec}
@@ -403,7 +403,7 @@ a.box__card--speaker .box__info .text__session{padding-top:15px}
 .box__article--schedule{margin-top:8vw;padding:9vw 5vw}
 .list__schedule{margin:0 5px}
 .list__speakers li{width:100%;margin:15px 0 0;padding-right:0}
-.list__schedule .list-item{width:50%;padding:0 2vw;margin-bottom:6vw}
+.list__schedule .list-item{width:48%;padding:0 2vw;margin:0 1%;margin-bottom:6vw}
 .list__schedule .box__zone .text__time{font-size:3vw}
 .list__schedule .box__zone .text__code{font-size:3vw}
 .list__schedule .box__zone .text__closed{font-size:3vw}
@@ -1763,11 +1763,11 @@ h3 + .list__video li{float:left;width:50%}
 
 }
 
-.layer__live-notice{position:absolute;z-index:10;top:218px;right:100px;border-radius:20px;padding:30px;background-color:#fff}
+.layer__live-notice{position:absolute;z-index:10;top:524px;left:320px;border-radius:20px;padding:30px;background-color:#fff;font-weight:bold}
 .layer__live-notice strong{font-family:'SamsungSharpSans',sans-serif;font-size:1.28em}
-.layer__live-notice .button__close{position:absolute;top:15px;right:15px;background-color:#ccc;width:30px;height:30px;background:url(../images/common/ico_close.png) no-repeat 0 0;background-size:100% auto;font-size:0;line-height:0}
+.layer__live-notice .button__close{display:none;position:absolute;top:15px;right:15px;background-color:#ccc;width:30px;height:30px;background:url(../images/common/ico_close.png) no-repeat 0 0;background-size:100% auto;font-size:0;line-height:0}
 @media (max-width:1419px){
-.layer__live-notice{top:13vw;right:4vw;padding:2.5vw;font-size:1.4vw;border-radius:12px}
+.layer__live-notice{top:35vw;left:25vw;padding:2.5vw;font-size:1.4vw;border-radius:12px}
 .layer__live-notice .button__close{top:1.5vw;right:1.5vw;width:2.5vw;height:2.5vw}
 }
 @media (max-width:768px){
