@@ -1814,9 +1814,9 @@ h3 + .list__video li{float:left;width:50%}
 .box__card--booth .button__favorites::after{content:'';position:relative;top:0;display:inline-block;width:25px;height:25px;background:url(../images/common/ico__favorite.png) no-repeat 0 0;background-size:100% auto;vertical-align:top}
 .box__card--booth .button__favorites.button__favorites--active::after{background-position:0 -25px}
 .box__card--booth .box__info .button__favorites{display:inline-block;vertical-align:top;position:relative;top:4px;margin-left:10px}
-.box__card--booth .list__contact{padding-top:20px;margin-bottom:30px}
+.box__card--booth .list__contact{margin-bottom:30px}
 .box__card--booth .list__contact li{position:relative;padding:10px 4px 7px 33px;border-bottom:1px solid #dfdde0}
-.box__card--booth .list__contact li::before{content:'';position:absolute;top:50%;left:16px;width:0;height:0;margin-top:-6px;border-style: solid;border-width: 6px 0 6px 6px;border-color: transparent transparent transparent #0069ea}
+.box__card--booth .list__contact li::before{content:'';position:absolute;top:10px;left:16px;width:0;height:0;border-style: solid;border-width: 6px 0 6px 6px;border-color: transparent transparent transparent #0069ea}
 .box__card--booth .list__contact .text__title{font-size:16px;color:#006bea}
 .box__card--booth .list__contact .text__desc{font-size:16px;color:#757575}
 .box__card--booth .list__contact .text__desc a{color:#757575}
@@ -1843,10 +1843,10 @@ h3 + .list__video li{float:left;width:50%}
 .box__article--connect h3{color:#fff}
 .box__article--connect .text__info{margin-top:-20px;margin-bottom:0;color:#fff}
 .box__article--connect .list__contact li{border:none;padding-top:6px}
-.box__article--connect .list__contact li + li{margin-top:20px}
+.box__article--connect .list__contact li + li{margin-top:10px}
 .box__article--connect .list__contact li::before{border-color:transparent transparent transparent #fff}
-.box__article--connect .list__contact li .text__title{color:#fff}
-.box__article--connect .list__contact li .text__desc{font-size:0;line-height:0}
+.box__article--connect .list__contact li .text__title{display:block;color:#fff}
+.box__article--connect .list__contact li .text__desc{font-size:0}
 .box__article--connect .list__contact li .text__desc a{display:block;font-size:16px;color:#fff}
 .box__article--connect .list__contact li .text__desc a:hover{color:#fff}
 .box__article--connect .button{position:absolute;top:70px;right:70px;-webkit-transform:scale(1.2);transform:scale(1.2)}
