@@ -1551,6 +1551,7 @@ form .text-notice .text--required{font-size:3vw}
 .list__document li .box{display:table-cell;width:130px;vertical-align:middle}
 .list__document li .button{display:inline-block;vertical-align:middle;min-width:110px;margin-right:24px}
 .list__document li .text__info{display:table-cell;vertical-align:middle;height:100%;font-size:18px;line-height:1.25em;color:#757575}
+.box__document .text__info--player{position:absolute;top:0;right:40px;background-color:#fff;padding:4px 10px}
 .box__finalize{margin-top:60px;margin-bottom:80px}
 .box__review-booth ~ .box__review-booth{margin-top:40px}
 .box__review-booth .text__title{margin-bottom:12px;font-size:18px;color:#8f8f8f}
@@ -1628,6 +1629,7 @@ h3 + .list__video li{float:left;width:50%}
 	.list__document li .box{width:13vw}
 	.list__document li .button{min-width:11vw;margin-right:2vw}
 	.list__document li .text__info{font-size:1.75vw}
+	.box__document .text__info--player{top:10px;right:20px}
 	.box__finalize{margin-bottom:5vw}
 	.box__review-booth ~ .box__review-booth{margin-top:2vw}
 	.box__review-booth .text__title{margin-bottom:6px;font-size:1.75vw}
@@ -1815,7 +1817,7 @@ h3 + .list__video li{float:left;width:50%}
 .box__card--booth .button__favorites.button__favorites--active::after{background-position:0 -25px}
 .box__card--booth .box__info .button__favorites{display:inline-block;vertical-align:top;position:relative;top:4px;margin-left:10px}
 .box__card--booth .list__contact{margin-bottom:30px}
-.box__card--booth .list__contact li{position:relative;padding:10px 4px 7px 33px;border-bottom:1px solid #dfdde0}
+.box__card--booth .list__contact li{position:relative;padding:6px 4px 7px 33px;border-bottom:1px solid #dfdde0}
 .box__card--booth .list__contact li::before{content:'';position:absolute;top:10px;left:16px;width:0;height:0;border-style: solid;border-width: 6px 0 6px 6px;border-color: transparent transparent transparent #0069ea}
 .box__card--booth .list__contact .text__title{font-size:16px;color:#006bea}
 .box__card--booth .list__contact .text__desc{font-size:16px;color:#757575}
@@ -1842,7 +1844,7 @@ h3 + .list__video li{float:left;width:50%}
 .box__article--connect h2,
 .box__article--connect h3{color:#fff}
 .box__article--connect .text__info{margin-top:-20px;margin-bottom:0;color:#fff}
-.box__article--connect .list__contact li{border:none;padding-top:6px}
+.box__article--connect .list__contact li{border:none}
 .box__article--connect .list__contact li + li{margin-top:10px}
 .box__article--connect .list__contact li::before{border-color:transparent transparent transparent #fff}
 .box__article--connect .list__contact li .text__title{display:block;color:#fff}
@@ -1929,6 +1931,7 @@ h3 + .list__video li{float:left;width:50%}
 	.box__article--pages .box__previous-page::before{left:-2px}
 	.box__article--pages .box__next-page::before{left:auto;right:-2px}
 	.box__article--pages .box__next-page::after{left:auto;right:0}
+	.box__article--connect .list__contact li .text__desc a{font-size:3vw}
 }
 
 #layer__agree .box__layer-inner{z-index:100;top:35%}
