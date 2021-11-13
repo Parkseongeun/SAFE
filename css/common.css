@@ -1869,7 +1869,7 @@ h3 + .list__video li{float:left;width:50%}
 .view--list .box__card--booth .box__info{display:table;table-layout:fixed;width:100%;height:80px;padding-top:0}
 .view--list .box__card--booth .button__favorites{position:absolute;top:50%;left:-40px;margin-left:0;-webkit-transform:translateY(-50%);transform:translateY(-50%)}
 .view--list .box__card--booth .text__company{display:table-cell;width:33%;padding-right:24px;padding-left:24px;margin-bottom:0;vertical-align:middle}
-.view--list .box__card--booth .text__info{display:table-cell;vertical-align:middle}
+.view--list .box__card--booth .text__info{display:table-cell;width:67%;vertical-align:middle}
 .view--list .box__card--booth .list__contact{display:none}
 .view--list .box__card--booth .link__more{font-size:0;position:absolute;top:0;left:0;width:100%;height:100%;margin:0;border:none;background-color:transparent}
 .view--gallery .box__card--booth .box__booth-logo{display:none}
@@ -1953,7 +1953,7 @@ h3 + .list__video li{float:left;width:50%}
 	.view--list .box__card--booth .box__booth-logo{display:block;width:26vw}
 	.view--list .box__card--booth .box__booth-logo .box__image{width:25vw;padding-top:11vw}
 	.view--list .box__card--booth .text__company{display:block;margin-top:3vw;font-size:4vw;padding-left:0}
-	.view--list .box__card--booth .text__info{display:block;margin-top:1vw;font-size:3.5vw}
+	.view--list .box__card--booth .text__info{display:block;width:100%;margin-top:1vw;font-size:3.5vw}
 	.view--list .box__card--booth .link__more{display: none;}
 	.box__card--booth .text__info{margin-top:-2vw}
 	.box__article--connect{margin:8vw 12px 0}
