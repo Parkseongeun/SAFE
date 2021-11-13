@@ -10,34 +10,32 @@
 </head>
 <body>
 
-<!-- to.Dev : 캐시 정책 팝업 -->
-<div class="box__layer--cache" id="box__layer--cache" role="dialog">
+<!-- to.Dev : 동의 팝업 -->
+<div class="box__layer box__layer--active" id="layer__agree" role="dialog" style="display: none;">
 	<div class="box__layer-inner">
-		<div class="box__layer-content">
-			<div class="box_agreement">
-				<div class="box__form">
-					<div class="box__form-control">
-						<p><span>Please click 'Agree' to the Terms and Conditions</span><br><a href="terms.html">View more</a></p>
-						<div class="form-checkbox">
-							<input id="agreement1" type="checkbox" name="agreement">
-							<label for="agreement1"><span></span>I agree  (<em class="text--required">*</em>) </label>
-						</div>
+			<button class="button__closed" onclick="FuncLayer.closed()">닫기</button>
+		<div class="box_agreement">
+			<div class="box__form">
+				<div class="box__form-control">
+					<p><span>Please click 'Agree' to the Terms and Conditions</span><br><a href="terms.html">View more</a></p>
+					<div class="form-checkbox">
+						<input id="agreement1" type="checkbox" name="agreement">
+						<label for="agreement1"><span></span>I agree  (<em class="text--required">*</em>) </label>
 					</div>
-					<div class="box__form-control">
-						<p><span>Please click 'Agree' to the Privacy Policy and the Collection of Personal Information.</span><br><a href="privacy.html">View more</a></p>
-						<div class="form-checkbox">
-							<input id="agreement2" type="checkbox" name="agreement">
-							<label for="agreement2"><span></span>I agree  (<em class="text--required">*</em>) </label>
-						</div>
+				</div>
+				<div class="box__form-control">
+					<p><span>Please click 'Agree' to the Privacy Policy and the Collection of Personal Information.</span><br><a href="privacy.html">View more</a></p>
+					<div class="form-checkbox">
+						<input id="agreement2" type="checkbox" name="agreement">
+						<label for="agreement2"><span></span>I agree  (<em class="text--required">*</em>) </label>
 					</div>
 				</div>
 			</div>
-			<button type="button" class="button button--dark button__write" aria-haspopup="dialog">Acccept</button>
 		</div>
 	</div>
+	<div class="box__dimmed"></div>
 </div>
-<div class="box__dimmed" onclick="FuncLayer.close('#box__layer--cache')"></div>
-<!-- // to.Dev : 캐시 정책 팝업 -->
+<!-- // to.Dev : 동의 팝업 -->
 
 <header class="header">
     <div class="wraparea">
@@ -84,11 +82,11 @@
 			</p>
             <div class="box__badges">
 				<ul>
-					<li class="badge--live badge--active"><span>Keynote</span><p class="tooltip">뱃지에 대한 설명이 들어가게됩니다.</p></li>
-					<li class="badge--session badge--active"><span>Session1</span><p class="tooltip">뱃지에 대한 설명이 들어가게됩니다.</p></li>
-					<li class="badge--session2"><span>Session2</span><p class="tooltip">뱃지에 대한 설명이 들어가게됩니다.</p></li>
-					<li class="badge--booth badge--active"><span>Booth</span><p class="tooltip">뱃지에 대한 설명이 들어가게됩니다.</p></li>
-					<li class="badge--question badge--active"><span>Question</span><p class="tooltip">뱃지에 대한 설명이 들어가게됩니다.</p></li>
+					<li class="badge--live badge--active"><span>Live</span><p class="tooltip">뱃지에 대한 설명이 들어가게됩니다.</p></li>
+					<li class="badge--session badge--active"><span>1 session</span><p class="tooltip">뱃지에 대한 설명이 들어가게됩니다.</p></li>
+					<li class="badge--session2"><span>5 sessions</span><p class="tooltip">뱃지에 대한 설명이 들어가게됩니다.</p></li>
+					<li class="badge--booth badge--active"><span>Pavilion</span><p class="tooltip">뱃지에 대한 설명이 들어가게됩니다.</p></li>
+					<!-- <li class="badge--question badge--active"><span>Question</span><p class="tooltip">뱃지에 대한 설명이 들어가게됩니다.</p></li> -->
 					<li class="badge--survey"><span>Survey</span><p class="tooltip">뱃지에 대한 설명이 들어가게됩니다.</p></li>
 				</ul>
 			</div>
