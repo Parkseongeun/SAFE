@@ -265,7 +265,7 @@ h3 + .text__info{font-size:3.5vw}
 .list__overview .text__title::before{content:'';position:absolute;top:8px;left:8px;width:4px;height:4px;background-color:#000;border-radius:50vh}
 .list__overview .text__cont{float:left;font-size:18px;color:#535353}
 .box__article--welcome h2{padding-left:100px;padding-right:100px;font-family:'SamsungOne';font-size:20px;font-weight:500;line-height:1.85;color:#000;letter-spacing:-0.3px}
-.box__article--welcome .text__info{padding:50px 100px 0;font-size:18px;line-height:1.6;color:#000}
+.box__article--welcome .text__info{padding:50px 100px 50px;font-size:18px;line-height:1.6;color:#000}
 .box__article--welcome h2 + .text__info{padding-top:15px;font-weight:normal;line-height:1.6;color:#000}
 .box__article--welcome .text__opendate{margin-left:100px}
 .text__opendate{position:relative;margin-top:40px;padding-left:102px}
