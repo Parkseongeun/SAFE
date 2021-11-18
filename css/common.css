@@ -391,7 +391,7 @@ a.box__card--speaker .box__info .text__session{padding-top:15px}
 @media (max-width:768px){
 .box__article--visual{padding:0}
 .box__article--visual .wraparea{padding-top:148.56%}
-.box__article--visual .text__visual{left:8vw;top:18vw}
+.box__article--visual .text__visual{left:8vw;top:11vw}
 .box__article--visual .text__visual .text1{font-size:11vw}
 .box__article--visual .text__visual .text2{font-size:3.5vw;letter-spacing:-0.5px}
 .box__article--visual .text__visual .text3{font-size:3.5vw}
@@ -1498,7 +1498,7 @@ form .text-notice .text--required{font-size:3vw}
 .surveywrap .box__scale input[type=radio] + label{width:100%;padding-left:0}
 .surveywrap .box__scale input[type=radio] + label > span{left:50%;margin-top:5px;margin-left:-11px;background-color:#fff}
 .surveywrap .box__scale input[type=radio]:checked + label > span:after{top:2px;left:2px;width:14px;height:14px}
-.surveywrap input[name="chkterm"]+label{height:auto}
+.surveywrap input[name="chkterm"]+label{height:auto;margin-bottom:30px}
 
 .section__portal{display:flex;display:-webkit-flex;margin-top:100px}
 .section__portal::after{content:'';clear:both;display:block}
@@ -1814,8 +1814,19 @@ h3 + .list__video li{float:left;width:50%}
 .layer__live-notice .button__close{top:1.5vw;right:1.5vw;width:2.5vw;height:2.5vw}
 }
 @media (max-width:768px){
-.layer__live-notice{top:102vw;left:4vw;right:4vw;padding:3.5vw;font-size:3vw;border-radius:8px}
+.layer__live-notice{top:82vw;left:4vw;right:4vw;padding:3.5vw;font-size:3vw;border-radius:8px}
 .layer__live-notice .button__close{top:3.5vw;right:3.5vw;width:4.5vw;height:4.5vw}
+}
+.layer__live-notice2{position:absolute;z-index:10;top:140px;left:610px;border-radius:20px;padding:30px;background-color:#fff;font-weight:bold}
+.layer__live-notice2 strong{font-family:'SamsungSharpSans',sans-serif;font-size:1.28em}
+.layer__live-notice2 .button__close{display:none;position:absolute;top:15px;right:15px;background-color:#ccc;width:30px;height:30px;background:url(../images/common/ico_close.png) no-repeat 0 0;background-size:100% auto;font-size:0;line-height:0}
+@media (max-width:1419px){
+.layer__live-notice2{top:10vw;left:34vw;padding:2.5vw;font-size:1.4vw;border-radius:12px}
+.layer__live-notice2 .button__close{top:1.5vw;right:1.5vw;width:2.5vw;height:2.5vw}
+}
+@media (max-width:768px){
+.layer__live-notice2{top:114vw;left:4vw;right:4vw;padding:3.5vw;font-size:3vw;border-radius:8px}
+.layer__live-notice2 .button__close{top:3.5vw;right:3.5vw;width:4.5vw;height:4.5vw}
 }
 
 /* layer__agenda */
